@@ -4,11 +4,17 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
+import youtube from "./youtube.jpg";
+import estate from "./estate.jpg";
 
 import github from "./github.png";
 import demo from "./demo.png";
 import linkedin from "./linkedin.png";
 import medium from "./medium.png";
+
+import empathy from "./empathy.jpg";
+import resilience from "./resilience.jpg";
+import innovation from "./innovation.png";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -99,4 +105,9 @@ export {
   pokedex,
   worldmap,
   quiz,
+  empathy,
+  resilience,
+  innovation,
+  youtube,
+  estate,
 };

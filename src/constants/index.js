@@ -39,6 +39,11 @@ import {
   pokedex,
   worldmap,
   quiz,
+  empathy,
+  resilience,
+  innovation,
+  youtube,
+  estate,
 } from "../assets";
 
 const profiles = [
@@ -70,29 +75,13 @@ const profiles = [
 
 const achievements = [
   {
-    title:
-      "8th Position : Selected for the final round of 12th CSI InApp International Student Project awards 2023.",
+    title: "2th Position : Secured second position in college hackathon",
   },
   {
-    title: "Twice State level Table-Tennis Winner (2021 and 2022)",
+    title: "Branch Head of Computer Department (2021 - 2022)",
   },
   {
-    title:
-      "1st Position : Consecutive four times Winner of UdChalo Scholarship (2019 - 2023)",
-  },
-  {
-    title: "Branch Head of Information Technology Department (2021 - 2022)",
-  },
-  {
-    title:
-      "Selected in top 100 candidates for Google Cloud Training among 20k Students.",
-  },
-  {
-    title:
-      "Got Education Scholarship Scheme for Army Personnel(ESSA) Scholarship (2015 - 2023)",
-  },
-  {
-    title: "Played Nationals in Throwball for U-14 category. (2015)",
+    title: "Leaded college volleyball team",
   },
 ];
 
@@ -252,6 +241,29 @@ export const webProject = [
 
 export const productProject = [
   {
+    name: "Legacy Quest",
+    description: `Wealth transfer is a critical issue that is often overlooked, resulting in significant personal, familial, and economic consequences. This has led to - 1)Untracked Assets, 2)Family Conflicts, 3)Idle Savings Disruption of Financial Futures`,
+    tags: [
+      {
+        name: "Wireframing",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Survey",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Sec. Research",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: estate,
+    source_link:
+      "https://drive.google.com/file/d/1vrZBO9OIHR7rhhhYdGWlpf9_cCEez7vP/view?usp=drive_link",
+    source_code_link:
+      "https://docs.google.com/presentation/d/1M9suGRZIaGdrdm99EF7sS_S-6f7M5Hhw/edit?usp=drive_link&ouid=110213721605700921654&rtpof=true&sd=true",
+  },
+  {
     name: `Enhancing Long-Form Content Engagement on YouTube with AI-Powered Recommendations`,
     description: `YouTube has traditionally dominated long-form video content, offering creators lucrative ad revenue opportunities.However, the rise of short-form content is undermining long-form video traffic,threatening YouTube's established model.`,
     tags: [
@@ -268,33 +280,10 @@ export const productProject = [
         color: "pink-text-gradient",
       },
     ],
-    image: be,
+    image: youtube,
     source_link:
       "https://drive.google.com/file/d/1MYxckHKsZKa7EmMTMdgo44tqBsgA51Bu/view?usp=drive_link",
     source_code_link: "https://github.com/shinchancode/Final-Year-Project",
-  },
-
-  {
-    name: "DBMS Lab",
-    description:
-      "Semester 4 : DBMS Lab. Topics included: ER/EER Diagram, DDL statements, primary key and foreign key constraint., SQL queries with different functions, Views, PL/SQL, Trigger (Row level and statement level) and cursor.",
-    tags: [
-      {
-        name: "MySql",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "dbms",
-        color: "green-text-gradient",
-      },
-      {
-        name: "semester",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: sql,
-    source_link: "https://github.com/shinchancode/DBMS-SQL-Lab",
-    source_code_link: "https://github.com/shinchancode/DBMS-SQL-Lab",
   },
 ];
 
@@ -353,4 +342,27 @@ const educations = [
   },
 ];
 
-export { list, profiles, technologies, experiences, educations, achievements };
+const values = [
+  {
+    name: "Emapthy",
+    image: empathy,
+  },
+  {
+    name: "Resilience",
+    image: resilience,
+  },
+  {
+    name: "Innovation",
+    image: innovation,
+  },
+];
+
+export {
+  list,
+  profiles,
+  technologies,
+  experiences,
+  educations,
+  values,
+  achievements,
+};
