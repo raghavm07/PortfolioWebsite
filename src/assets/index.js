@@ -58,6 +58,10 @@ import sql from "./project/sql.jpg";
 import mini from "./project/library.png";
 import snl from "./project/snl.jpeg";
 
+import db from "./database.jpg";
+import sdlc from "./sdlc.webp";
+import stakeholders from "./stakeholders.jpg";
+
 export {
   logo,
   backend,
@@ -110,4 +114,7 @@ export {
   innovation,
   youtube,
   estate,
+  db,
+  sdlc,
+  stakeholders,
 };

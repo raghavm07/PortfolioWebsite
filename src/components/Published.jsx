@@ -44,7 +44,9 @@ const ProjectCard = ({
             className="absolute inset-0 flex justify-center card-img_hover"
             style={{ alignItems: "center" }}
           >
-            <h3 className="text-black font-bold text-[16px]">{name}</h3>
+            <h3 className="text-black font-bold text-[16px] text-center">
+              {name}
+            </h3>
           </div>
 
           <div className="title absolute inset-0 flex justify-end card-img_hover">
@@ -54,16 +56,6 @@ const ProjectCard = ({
             >
               <img
                 src={demo}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />

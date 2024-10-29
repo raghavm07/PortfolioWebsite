@@ -44,6 +44,9 @@ import {
   innovation,
   youtube,
   estate,
+  db,
+  sdlc,
+  stakeholders,
 } from "../assets";
 
 const profiles = [
@@ -288,24 +291,22 @@ export const productProject = [
 ];
 const thoughts = [
   {
-    name: "Thought 1",
-    description: `ABCD`,
-
-    image: estate,
+    name: "Database Fundamentals: Relational vs. NoSQL Explained",
+    image: db,
     source_link:
-      "https://drive.google.com/file/d/1vrZBO9OIHR7rhhhYdGWlpf9_cCEez7vP/view?usp=drive_link",
-    source_code_link:
-      "https://docs.google.com/presentation/d/1M9suGRZIaGdrdm99EF7sS_S-6f7M5Hhw/edit?usp=drive_link&ouid=110213721605700921654&rtpof=true&sd=true",
+      "https://medium.com/@raghavm79/database-fundamentals-relational-vs-nosql-explained-fe490df12f68",
   },
   {
-    name: "Thought 2",
-    description: `EFGH`,
-
-    image: estate,
+    name: "Bridging the Gap: How to Align Stakeholder Expectations with Technical Feasibility",
+    image: stakeholders,
     source_link:
-      "https://drive.google.com/file/d/1vrZBO9OIHR7rhhhYdGWlpf9_cCEez7vP/view?usp=drive_link",
-    source_code_link:
-      "https://docs.google.com/presentation/d/1M9suGRZIaGdrdm99EF7sS_S-6f7M5Hhw/edit?usp=drive_link&ouid=110213721605700921654&rtpof=true&sd=true",
+      "https://www.linkedin.com/posts/raghavmittal79_softwaredevelopment-stakeholderengagement-activity-7256544658686652418-uOkc?utm_source=share&utm_medium=member_android",
+  },
+  {
+    name: "Understanding the Software Development Life Cycle (SDLC)",
+    image: sdlc,
+    source_link:
+      "https://medium.com/@raghavm79/understanding-the-software-development-life-cycle-sdlc-d1167dfdb009",
   },
 ];
 
