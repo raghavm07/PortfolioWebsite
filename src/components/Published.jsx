@@ -7,9 +7,9 @@ import { demo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { list } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { webProject, productProject } from "../constants";
+import { thoughts } from "../constants";
 import ProjectList from "./ProjectList";
-import "./Project.scss";
+import "./Published.scss";
 
 const ProjectCard = ({
   index,
@@ -31,7 +31,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="project-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full"
+        className="publish-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full "
       >
         <div className="Box1 relative w-full h-[180px]">
           <img
@@ -70,46 +70,16 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-
-        <div className="content mt-5">
-          <p
-            className="mt-2 text-secondary text-[14px]"
-            style={{ textAlign: "justify" }}
-          >
-            {description}
-          </p>
-        </div>
-
-        <div className="content mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
       </Tilt>
     </motion.div>
   );
 };
-const Project = () => {
-  const [selected, setSelected] = useState("productProject");
+const Published = () => {
+  const [selected, setSelected] = useState("thoughts");
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    switch (selected) {
-      case "web":
-        setData(webProject);
-        break;
-      case "product":
-        setData(productProject);
-        break;
-
-      default:
-        setData(productProject);
-    }
+    setData(thoughts);
   }, [selected]);
 
   return (
@@ -118,28 +88,17 @@ const Project = () => {
         whileInView={{ opacity: 1, transform: "none" }}
         variants={textVariant()}
       >
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>My Thoughts</p>
+        <h2 className={`${styles.sectionHeadText}`}>Published.</h2>
       </motion.div>
 
-      <div className="project w-full flex">
+      <div className="project w-full flex ">
         <motion.p
           whileInView={{ opacity: 1, transform: "none" }}
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] leading-[30px]"
         >
-          <ul>
-            {list.map((item) => (
-              <ProjectList
-                title={item.title}
-                active={selected === item.id}
-                setSelected={setSelected}
-                id={item.id}
-              />
-            ))}
-          </ul>
-
-          <div className="box mt-20 flex flex-wrap justify-center">
+          <div className="box mt-20 flex flex-wrap justify-center ">
             {data.map((project, index) => (
               <div>
                 <ProjectCard
@@ -156,4 +115,4 @@ const Project = () => {
   );
 };
 
-export default SectionWrapper(Project, "project");
+export default SectionWrapper(Published, "thoughts");

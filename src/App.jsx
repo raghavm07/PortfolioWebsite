@@ -15,6 +15,7 @@ import {
   Footer,
 } from "./components";
 import Values from "./components/Values";
+import Published from "./components/Published";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Content />
           <Values />
           <Project />
+          <Published />
           <Experience />
           <Education />
           <Achievement />

@@ -81,7 +81,7 @@ const achievements = [
     title: "Branch Head of Computer Department (2021 - 2022)",
   },
   {
-    title: "Leaded college volleyball team",
+    title: "Lead college volleyball team",
   },
 ];
 
@@ -286,6 +286,28 @@ export const productProject = [
     source_code_link: "https://github.com/shinchancode/Final-Year-Project",
   },
 ];
+const thoughts = [
+  {
+    name: "Thought 1",
+    description: `ABCD`,
+
+    image: estate,
+    source_link:
+      "https://drive.google.com/file/d/1vrZBO9OIHR7rhhhYdGWlpf9_cCEez7vP/view?usp=drive_link",
+    source_code_link:
+      "https://docs.google.com/presentation/d/1M9suGRZIaGdrdm99EF7sS_S-6f7M5Hhw/edit?usp=drive_link&ouid=110213721605700921654&rtpof=true&sd=true",
+  },
+  {
+    name: "Thought 2",
+    description: `EFGH`,
+
+    image: estate,
+    source_link:
+      "https://drive.google.com/file/d/1vrZBO9OIHR7rhhhYdGWlpf9_cCEez7vP/view?usp=drive_link",
+    source_code_link:
+      "https://docs.google.com/presentation/d/1M9suGRZIaGdrdm99EF7sS_S-6f7M5Hhw/edit?usp=drive_link&ouid=110213721605700921654&rtpof=true&sd=true",
+  },
+];
 
 const experiences = [
   {
@@ -365,4 +387,5 @@ export {
   educations,
   values,
   achievements,
+  thoughts,
 };
