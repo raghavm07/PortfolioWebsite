@@ -6,6 +6,7 @@ import React, { useEffect, useRef } from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { ImLinkedin } from "react-icons/im";
 import { AiOutlineInstagram } from "react-icons/ai";
+import { SiGoogledrive } from "react-icons/si";
 import { BiLinkAlt } from "react-icons/bi";
 import { raghav } from "../assets";
 import "./Hero.scss";
@@ -58,6 +59,9 @@ const Hero = () => {
               </a>
               <a href="https://github.com/raghavm07" target="_blank">
                 <AiOutlineGithub />
+              </a>
+              <a href="https://drive.google.com/drive/folders/1LfQ8Cg-BnI5NZiLAEOIm6a2ds4bGtTYn?usp=sharing" target="_blank">
+                <SiGoogledrive />
               </a>
             </div>
           </div>
