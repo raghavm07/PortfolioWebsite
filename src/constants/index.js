@@ -264,7 +264,7 @@ export const productProject = [
     source_link:
       "https://drive.google.com/file/d/1vrZBO9OIHR7rhhhYdGWlpf9_cCEez7vP/view?usp=drive_link",
     source_code_link:
-      "https://docs.google.com/presentation/d/1M9suGRZIaGdrdm99EF7sS_S-6f7M5Hhw/edit?usp=drive_link&ouid=110213721605700921654&rtpof=true&sd=true",
+      "https://docs.google.com/presentation/d/1a829qjZvf08H_0x2-b3gdJSpAR6wKrtH/edit?usp=drivesdk&ouid=110213721605700921654&rtpof=true&sd=true",
   },
   {
     name: `Enhancing Long-Form Content Engagement on YouTube with AI-Powered Recommendations`,
@@ -286,7 +286,8 @@ export const productProject = [
     image: youtube,
     source_link:
       "https://drive.google.com/file/d/1MYxckHKsZKa7EmMTMdgo44tqBsgA51Bu/view?usp=drive_link",
-    source_code_link: "https://github.com/shinchancode/Final-Year-Project",
+    source_code_link:
+      "https://docs.google.com/presentation/d/1MDZT7cHu-bpGlzWpNqIsv1v1FXEAdQ4b/edit?usp=drivesdk&ouid=110213721605700921654&rtpof=true&sd=true",
   },
 ];
 const thoughts = [
