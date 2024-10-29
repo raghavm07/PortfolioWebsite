@@ -61,6 +61,7 @@ import snl from "./project/snl.jpeg";
 import db from "./db.jpg";
 import sdlc from "./sdlc.webp";
 import stakeholders from "./stakeholders.jpg";
+import drive from "./drive.jpeg";
 
 export {
   logo,
@@ -117,4 +118,5 @@ export {
   db,
   sdlc,
   stakeholders,
+  drive,
 };
