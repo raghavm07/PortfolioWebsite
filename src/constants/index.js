@@ -35,16 +35,17 @@ const profiles = [
     icon: linkedin,
   },
   {
-    link: "https://www.geeksforgeeks.org/user/raghavm79/",
-    icon: "https://img.icons8.com/color/344/GeeksforGeeks.png",
+    link: "https://leetcode.com/u/raghavm79/",
+    icon: leetcode,
   },
   {
     link: "https://github.com/raghavm07",
     icon: github,
   },
+
   {
-    link: "https://leetcode.com/u/raghavm79/",
-    icon: leetcode,
+    link: "https://www.geeksforgeeks.org/user/raghavm79/",
+    icon: "https://img.icons8.com/color/344/GeeksforGeeks.png",
   },
   {
     link: "https://www.hackerrank.com/profile/raghavm79",
