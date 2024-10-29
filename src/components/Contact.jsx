@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -26,12 +28,12 @@ const Contact = () => {
 
   const validateForm = () => {
     if (!form.name || !form.email || !form.message) {
-      alert("All fields are required.");
+      toast.warn("All fields are required.");
       return false;
     }
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(form.email)) {
-      alert("Please enter a valid email.");
+      toast.warn("Please enter a valid email.");
       return false;
     }
     return true;
@@ -58,13 +60,15 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          toast.success(
+            "Thank you! I will get back to you as soon as possible."
+          );
           setForm({ name: "", email: "", message: "" });
         },
         (error) => {
           setLoading(false);
           console.error("EmailJS error:", error);
-          alert("Ahh, something went wrong. Please try again.");
+          toast.error("Ahh, something went wrong. Please try again.");
         }
       );
   };
@@ -166,6 +170,14 @@ const Contact = () => {
           </article>
         </div>
       </motion.div>
+
+      {/* Add ToastContainer here */}
+      <ToastContainer
+        position="bottom-left"
+        autoClose={5000}
+        closeOnClick
+        style={{ zIndex: 9999, marginBottom: "100px" }}
+      />
     </div>
   );
 };
