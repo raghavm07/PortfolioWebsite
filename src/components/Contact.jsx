@@ -1,13 +1,13 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
+import classNames from "classnames";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -17,27 +17,35 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-    setForm({
-      ...form,
-      [name]: value,
-    });
+  const validateForm = () => {
+    if (!form.name || !form.email || !form.message) {
+      alert("All fields are required.");
+      return false;
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(form.email)) {
+      alert("Please enter a valid email.");
+      return false;
+    }
+    return true;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validateForm()) return;
     setLoading(true);
 
     emailjs
       .send(
         "service_5qikpyj",
-        "ScnGidqx-J_LL4V9z",
+        "template_8vh9p4c",
         {
           from_name: form.name,
           to_name: "Raghav Mittal",
@@ -45,23 +53,17 @@ const Contact = () => {
           to_email: "raghavm79@gmail.com",
           message: form.message,
         },
-        "QMT3EIxru5xxytMoDkAct"
+        "ScnGidqx-J_LL4V9z"
       )
       .then(
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          setForm({ name: "", email: "", message: "" });
         },
         (error) => {
           setLoading(false);
-          console.error(error);
-
+          console.error("EmailJS error:", error);
           alert("Ahh, something went wrong. Please try again.");
         }
       );
@@ -99,6 +101,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
+              aria-label="Your Name"
               className="bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium"
             />
           </label>
@@ -110,6 +113,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
+              aria-label="Your email"
               className="bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium"
             />
           </label>
@@ -121,13 +125,17 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
+              aria-label="Your Message"
               className="bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium"
             />
           </label>
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            className={classNames(
+              "bg-tertiary py-3 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary",
+              { "loading-class": loading }
+            )}
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -139,6 +147,7 @@ const Contact = () => {
             <a
               href="mailto:raghavm79@gmail.com"
               target="_blank"
+              rel="noopener noreferrer"
               className="blue-text-gradient"
             >
               raghavm79@gmail.com
@@ -149,6 +158,7 @@ const Contact = () => {
             <a
               href="https://api.whatsapp.com/send/?phone=919990349184&text&app_absent=0&lang=en"
               target="_blank"
+              rel="noopener noreferrer"
               className="blue-text-gradient"
             >
               +91 9990349184
