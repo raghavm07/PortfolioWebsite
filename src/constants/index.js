@@ -198,28 +198,6 @@ export const webProject = [
     source_link: "https://math-quiz-app-mu.vercel.app/",
     source_code_link: "https://github.com/raghavm07/MathQuizApp",
   },
-  {
-    name: "Chit Chat Application",
-    description:
-      "Real-Time, event based communication in Nodejs and browser-based Chat application. Uses Socket.io for implementation for WebSockets protocol. This application built using Node.js, Express, Socket.io and Render (Hosting)",
-    tags: [
-      {
-        name: "Chatting",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: chitchat,
-    source_link: "",
-    source_code_link: "",
-  },
 ];
 
 export const productProject = [
