@@ -59,12 +59,6 @@ const Hero = () => {
               <a href="https://github.com/raghavm07" target="_blank">
                 <AiOutlineGithub />
               </a>
-              {/* <a href="https://www.instagram.com/aarti.rathiii" target="_blank">
-                <AiOutlineInstagram />
-              </a> */}
-              {/* <a href="https://linktr.ee/rathi17" target="_blank">
-                <BiLinkAlt />
-              </a> */}
             </div>
           </div>
         </div>
