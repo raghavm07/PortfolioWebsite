@@ -216,9 +216,8 @@ export const webProject = [
       },
     ],
     image: chitchat,
-    // source_link: "https://chit-chat-app.onrender.com/",
-    // source_code_link:
-    //   "https://github.com/shinchancode/Chit-Chat-Real_time_chat_app",
+    source_link: "",
+    source_code_link: "",
   },
 ];
 

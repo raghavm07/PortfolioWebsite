@@ -1,5 +1,5 @@
 import logo from "./arr.svg";
-import aarti from "./photo2.jpg";
+import raghav from "./photo2.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -85,7 +85,7 @@ export {
   clg,
   school,
   crypto,
-  aarti,
+  raghav,
   oop,
   crud,
   dwld,
