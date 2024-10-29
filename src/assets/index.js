@@ -58,7 +58,7 @@ import sql from "./project/sql.jpg";
 import mini from "./project/library.png";
 import snl from "./project/snl.jpeg";
 
-import db from "./database.jpg";
+import db from "./db.jpg";
 import sdlc from "./sdlc.webp";
 import stakeholders from "./stakeholders.jpg";
 
