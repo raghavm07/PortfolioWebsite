@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import Content from "./Content.jsx"
+
 import { styles } from "../styles";
 import { logo } from "../assets";
 import "./Navbar.scss";
@@ -46,6 +48,9 @@ const Navbar = () => {
             raghav.mittal
           </p>
         </Link>
+        <div>
+        <Content/>
+        </div>
 
         <div className="sm:flex gap-5">
           <div
