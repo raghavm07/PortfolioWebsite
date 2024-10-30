@@ -92,12 +92,8 @@ const Published = () => {
         >
           <div className="box mt-20 flex flex-wrap justify-center ">
             {data.map((project, index) => (
-              <div>
-                <ProjectCard
-                  key={`project-${index}`}
-                  index={index}
-                  {...project}
-                />
+              <div key={`project-${index}`}>
+                <ProjectCard index={index} {...project} />
               </div>
             ))}
           </div>
