@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -7,7 +8,7 @@ import { github, demo } from "../assets";
 import "./AllProjects.scss";
 import { fadeIn, textVariant } from "../utils/motion";
 import { list } from "../constants";
-
+import { AiOutlineArrowLeft } from "react-icons/ai";
 import { allproductProject, allwebProject } from "../constants";
 import ProjectList from "./ProjectList";
 
@@ -97,6 +98,7 @@ const ProjectCard = ({
 const AllProjects = () => {
   const [selected, setSelected] = useState("allproductProject");
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     switch (selected) {
@@ -118,7 +120,15 @@ const AllProjects = () => {
         whileInView={{ opacity: 1, transform: "none" }}
         variants={textVariant()}
       >
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <div className="flex items-center mb-4">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center text-white hover:text-secondary transition-colors duration-300 border-0 bg-transparent mr-2"
+          >
+            <AiOutlineArrowLeft />
+          </button>
+          <p className={`${styles.sectionSubText}`}>My work</p>
+        </div>
         <h2 className={`${styles.sectionHeadText}`}>All Projects.</h2>
       </motion.div>
 
