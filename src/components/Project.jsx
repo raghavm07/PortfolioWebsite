@@ -144,7 +144,7 @@ const Project = () => {
             ))}
           </ul>
 
-          <div className="box mt-20 flex flex-wrap justify-center">
+          <div className="box mt-10 flex flex-wrap justify-center">
             {data.map((project, index) => (
               <div key={`project-${index}`}>
                 <ProjectCard index={index} {...project} />

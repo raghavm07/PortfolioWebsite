@@ -149,7 +149,7 @@ const AllProjects = () => {
             ))}
           </ul>
 
-          <div className="box mt-20 flex flex-wrap justify-center">
+          <div className="box mt-10 flex flex-wrap justify-center">
             {data.map((project, index) => (
               <div>
                 <ProjectCard
