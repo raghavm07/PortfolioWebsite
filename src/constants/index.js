@@ -188,16 +188,16 @@ export const webProject = [
       },
     ],
     image: worldmap,
-    source_link: "https://github.com/raghavm07/worldmapapp",
+    source_link: "https://worldmapapp.vercel.app/",
     source_code_link: "https://github.com/raghavm07/worldmapapp",
   },
   {
     name: "Quiz App",
     description:
-      "Website made using Nodejs and Express in the BackEnd. Diffrent type of quizes.",
+      "Quiz app made using React.js,Tailwind,Chadcn,Nodejs and Express in the BackEnd. You can play diffrent type of quizes.",
     tags: [
       {
-        name: "JavaScript,React",
+        name: "JavaScript,React.Js",
         color: "blue-text-gradient",
       },
       {
