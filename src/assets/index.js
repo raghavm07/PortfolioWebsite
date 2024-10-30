@@ -25,6 +25,7 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
+import C from "./tech/C.png";
 
 import holopin from "./holopin.png";
 import hf from "./hf.svg";
@@ -119,4 +120,5 @@ export {
   sdlc,
   stakeholders,
   drive,
+  C,
 };

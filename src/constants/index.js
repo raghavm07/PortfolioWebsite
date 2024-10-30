@@ -27,6 +27,7 @@ import {
   db,
   sdlc,
   stakeholders,
+  C,
 } from "../assets";
 
 const profiles = [
@@ -93,6 +94,10 @@ const technologies = [
   {
     name: "C++ tool",
     icon: "https://img.icons8.com/color/480/000000/c-plus-plus-logo.png",
+  },
+  {
+    name: "C#",
+    icon: C,
   },
   {
     name: "React JS",
