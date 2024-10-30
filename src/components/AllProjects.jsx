@@ -1,16 +1,15 @@
-import Tilt from "react-parallax-tilt";
-import { motion, transform } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import { styles } from "../styles";
-import { github } from "../assets";
-import { demo } from "../assets";
+import React, { useState, useEffect } from "react";
 import { SectionWrapper } from "../hoc";
-import { list } from "../constants";
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import Tilt from "react-parallax-tilt";
+import { github, demo } from "../assets";
+import "./AllProjects.scss";
 import { fadeIn, textVariant } from "../utils/motion";
-import { webProject, productProject } from "../constants";
+import { list } from "../constants";
+
+import { allproductProject, allwebProject } from "../constants";
 import ProjectList from "./ProjectList";
-import { useNavigate } from "react-router-dom";
-import "./Project.scss";
 
 const ProjectCard = ({
   index,
@@ -95,22 +94,21 @@ const ProjectCard = ({
     </motion.div>
   );
 };
-const Project = () => {
-  const [selected, setSelected] = useState("productProject");
+const AllProjects = () => {
+  const [selected, setSelected] = useState("allproductProject");
   const [data, setData] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     switch (selected) {
       case "web":
-        setData(webProject);
+        setData(allwebProject);
         break;
       case "product":
-        setData(productProject);
+        setData(allproductProject);
         break;
 
       default:
-        setData(productProject);
+        setData(allproductProject);
     }
   }, [selected]);
 
@@ -121,7 +119,7 @@ const Project = () => {
         variants={textVariant()}
       >
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadText}`}>All Projects.</h2>
       </motion.div>
 
       <div className="project w-full flex">
@@ -152,31 +150,10 @@ const Project = () => {
               </div>
             ))}
           </div>
-          <div className="project w-full flex">
-            <motion.p
-              whileInView={{ opacity: 1, transform: "none" }}
-              variants={fadeIn("", "", 0.1, 1)}
-              className="mt-3 text-secondary text-[17px] leading-[30px]"
-            >
-              {/* Content here */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="view-all-button flex justify-center items-center mt-10"
-              >
-                <button
-                  className="rounded-full py-2 px-6 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold text-lg shadow-lg hover:from-purple-600 hover:to-indigo-600"
-                  onClick={() => navigate("/all-projects")}
-                >
-                  View All
-                </button>
-              </motion.div>
-            </motion.p>
-          </div>
         </motion.p>
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Project, "project");
+export default SectionWrapper(AllProjects, "AllProjects");

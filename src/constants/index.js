@@ -253,6 +253,120 @@ export const productProject = [
       "https://docs.google.com/presentation/d/1MDZT7cHu-bpGlzWpNqIsv1v1FXEAdQ4b/edit?usp=drivesdk&ouid=110213721605700921654&rtpof=true&sd=true",
   },
 ];
+export const allwebProject = [
+  {
+    name: "Pokedex",
+    description:
+      "Created an impressive website made using React using Pokemon Api",
+    tags: [
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Api",
+        color: "green-text-gradient",
+      },
+    ],
+    image: pokedex,
+    source_link: "https://github.com/raghavm07/Pokedex",
+    source_code_link: "https://github.com/raghavm07/Pokedex",
+  },
+  {
+    name: "World Map App",
+    description:
+      "Website made using React in the FrontEnd, Nodejs and Express in the BackEnd. Responsive webpage is made with user friendly interface",
+    tags: [
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "html css tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: worldmap,
+    source_link: "https://github.com/raghavm07/worldmapapp",
+    source_code_link: "https://github.com/raghavm07/worldmapapp",
+  },
+  {
+    name: "Quiz App",
+    description:
+      "Website made using Nodejs and Express in the BackEnd. Diffrent type of quizes.",
+    tags: [
+      {
+        name: "JavaScript,React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: quiz,
+    source_link: "https://math-quiz-app-mu.vercel.app/",
+    source_code_link: "https://github.com/raghavm07/MathQuizApp",
+  },
+];
+
+export const allproductProject = [
+  {
+    name: "Legacy Quest",
+    description: `Wealth transfer is a critical issue that is often overlooked, resulting in significant personal, familial, and economic consequences. This has led to - 1)Untracked Assets, 2)Family Conflicts, 3)Idle Savings Disruption of Financial Futures`,
+    tags: [
+      {
+        name: "Wireframing",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Survey",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Sec. Research",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: estate,
+    source_link:
+      "https://drive.google.com/file/d/1vrZBO9OIHR7rhhhYdGWlpf9_cCEez7vP/view?usp=drive_link",
+    source_code_link:
+      "https://docs.google.com/presentation/d/1a829qjZvf08H_0x2-b3gdJSpAR6wKrtH/edit?usp=drivesdk&ouid=110213721605700921654&rtpof=true&sd=true",
+  },
+  {
+    name: `Enhancing Long-Form Content Engagement on YouTube with AI-Powered Recommendations`,
+    description: `YouTube has traditionally dominated long-form video content, offering creators lucrative ad revenue opportunities.However, the rise of short-form content is undermining long-form video traffic,threatening YouTube's established model.`,
+    tags: [
+      {
+        name: "PRD",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Research",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Competitor Analysis",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: youtube,
+    source_link:
+      "https://drive.google.com/file/d/1MYxckHKsZKa7EmMTMdgo44tqBsgA51Bu/view?usp=drive_link",
+    source_code_link:
+      "https://docs.google.com/presentation/d/1MDZT7cHu-bpGlzWpNqIsv1v1FXEAdQ4b/edit?usp=drivesdk&ouid=110213721605700921654&rtpof=true&sd=true",
+  },
+];
+
 const thoughts = [
   {
     name: "Database Fundamentals: Relational vs. NoSQL Explained",

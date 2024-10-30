@@ -1,0 +1,114 @@
+$maincolor: rgb(3, 3, 37);
+$secondary-color: #00e9ff; // You can adjust this as needed
+
+.container {
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  min-height: 100vh; /* Ensure it takes the full viewport height */
+  padding: 2rem; /* Adjust padding for better spacing */
+  display: flex; /* Center content */
+  flex-direction: column; /* Stack items */
+  align-items: center; /* Center content horizontally */
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .project-box {
+    height: 500px; /* Fixed height for project box */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s; /* Smooth transition on hover */
+
+    &:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+    }
+  }
+
+  ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+      border: solid 2px $secondary-color;
+      border-radius: 10px;
+      padding: 0.5rem 1rem; /* Padding for better touch targets */
+      margin: 0 5px; /* Space between list items */
+      transition: background-color 0.3s; /* Smooth transition on hover */
+
+      &:hover {
+        background-color: $secondary-color; /* Change background on hover */
+        color: white; /* Change text color on hover */
+      }
+    }
+  }
+
+  .Box1 {
+    cursor: pointer;
+    position: relative; /* Required for absolute positioning of child elements */
+
+    .image {
+      z-index: 1;
+      transition: opacity 0.3s; /* Smooth transition for image */
+    }
+
+    h3,
+    .title {
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.3s; /* Smooth transition for text */
+    }
+
+    &:hover {
+      background-color: $maincolor; /* Change background on hover */
+
+      .image {
+        opacity: 0.2; /* Fade out the image */
+        z-index: 0; /* Move image behind text */
+      }
+
+      h3 {
+        opacity: 1; /* Show project title */
+        z-index: 1; /* Bring title to the front */
+        color: rgb(255, 255, 255); /* Change title color */
+      }
+
+      .title {
+        opacity: 1; /* Show additional title or description */
+        z-index: 1; /* Bring title to the front */
+      }
+    }
+  }
+
+  .box {
+    display: flex; /* Ensure items are aligned in a row */
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 1.75rem; /* Space between boxes */
+    justify-content: center; /* Center the boxes horizontally */
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .project {
+    .project-box {
+      height: 300px; /* Reduce height on smaller screens */
+    }
+
+    ul {
+      flex-direction: column; /* Stack list items vertically */
+      align-items: center; /* Center list items */
+    }
+
+    .box {
+      flex-direction: column; /* Stack boxes vertically on small screens */
+      align-items: center; /* Center boxes */
+    }
+  }
+}
