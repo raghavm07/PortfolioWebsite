@@ -34,7 +34,7 @@ const ProjectCard = ({
         }}
         className="project-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full"
       >
-        <div className="Box1 relative w-full h-[180px]">
+        <div id="Box1" className="Box1 relative w-full h-full sm:h-[180px] ">
           <img
             src={image}
             alt="project_image"
@@ -45,7 +45,9 @@ const ProjectCard = ({
             className="absolute inset-0 flex justify-center card-img_hover"
             style={{ alignItems: "center" }}
           >
-            <h3 className="text-black font-bold text-[16px]">{name}</h3>
+            <h3 className="text-black font-bold text-[16px] text-center">
+              {name}
+            </h3>
           </div>
 
           <div className="title absolute inset-0 flex justify-end card-img_hover">
@@ -155,7 +157,6 @@ const Project = () => {
               variants={fadeIn("", "", 0.1, 1)}
               className="mt-3 text-secondary text-[17px] leading-[30px]"
             >
-              {/* Content here */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

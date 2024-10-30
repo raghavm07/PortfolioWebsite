@@ -60,7 +60,7 @@ const profiles = [
 
 const achievements = [
   {
-    title: "2th Position : Secured second position in college hackathon",
+    title: "2nd Position : Secured second position in college hackathon",
   },
   {
     title: "Branch Head of Computer Department (2021 - 2022)",

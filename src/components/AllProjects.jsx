@@ -34,7 +34,7 @@ const ProjectCard = ({
         }}
         className="project-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full"
       >
-        <div className="Box1 relative w-full h-[180px]">
+        <div className="Box1 relative w-full h-full sm:h-[180px]">
           <img
             src={image}
             alt="project_image"
