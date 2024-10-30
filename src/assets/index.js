@@ -30,7 +30,7 @@ import C from "./tech/C.png";
 import holopin from "./holopin.png";
 import hf from "./hf.svg";
 import bny from "./bny.png";
-import clg from "./clg.jpg";
+import clg from "./clg.png";
 import school from "./school.png";
 import leetcode from "./leetcode.png";
 

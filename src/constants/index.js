@@ -305,8 +305,8 @@ const educations = [
     branch: "CSE",
     marks: "CGPA : 9.42 / 10",
     name: "Krishna Engineering College",
-    from: "UPTU",
-    year: "(2018 - 2022)",
+    from: "AKTU",
+    year: "2018 - 2022",
     image: clg,
   },
   {
