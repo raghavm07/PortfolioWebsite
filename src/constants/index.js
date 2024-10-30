@@ -34,27 +34,33 @@ const profiles = [
   {
     link: "https://www.linkedin.com/in/raghavmittal79/",
     icon: linkedin,
+    name: "LinkedIn",
   },
   {
     link: "https://leetcode.com/u/raghavm79/",
     icon: leetcode,
+    name: "LeetCode",
   },
   {
     link: "https://github.com/raghavm07",
     icon: github,
+    name: "GitHub",
   },
 
   {
     link: "https://www.geeksforgeeks.org/user/raghavm79/",
     icon: "https://img.icons8.com/color/344/GeeksforGeeks.png",
+    name: "GeekForGeeks",
   },
   {
     link: "https://www.hackerrank.com/profile/raghavm79",
     icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/344/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-color-tal-revivo.png",
+    name: "HackerRank",
   },
   {
     link: "https://medium.com/@raghavm79",
     icon: medium,
+    name: "Medium",
   },
 ];
 

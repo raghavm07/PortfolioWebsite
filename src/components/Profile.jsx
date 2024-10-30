@@ -25,6 +25,7 @@ const Profile = () => {
             <div className="icon-container">
               <a href={profile.link} target="_blank" rel="noopener noreferrer">
                 <img src={profile.icon} alt={profile.name} />
+                <span className="tooltip-text">{profile.name}</span>
               </a>
             </div>
           </div>

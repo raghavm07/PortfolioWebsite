@@ -1,50 +1,64 @@
-.my-skills 
-{
-    margin-top: 30px;
+.my-skills {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .skill {
+    margin: 0px 15px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 
-    .skill 
-    {
-        margin: 0px 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .icon-container {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 2rem;
+      display: flex;
+      transition: all 1s ease;
 
-        .icon-container 
-        {
-            width: 70px;
-            height: 70px;
-            margin-bottom: 2rem;
-            display: flex;
-            transition: all 1s ease;
+      a {
+        overflow: hidden;
 
-            a
-            {
-                overflow: hidden;
-
-                img
-                {
-                    width: 70px;
-                    height: 70px;
-                }
-            }
-
-            img
-            {
-                width: 70px;
-                height: 70px;                
-            }
-
-            &:hover
-            {
-                transform: scale(1.1);  
-            }
-            
+        img {
+          width: 70px;
+          height: 70px;
         }
+      }
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
+  }
+
+  .tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: -35px; /* Position below icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 1;
+  }
+
+  /* Show tooltip on hover */
+  a:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
 }
