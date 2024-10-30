@@ -26,7 +26,7 @@ const App = () => {
             <Navbar />
             <Hero />
           </div>
-          <Content />
+
           <Values />
           <Project />
           <Published />

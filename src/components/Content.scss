@@ -1,5 +1,5 @@
 .nav {
-  background: rgba(0, 0, 0, 0.3);
+  //background: rgba(0, 0, 0, 0.3);
   width: max-content;
   display: flex;
   padding: 0.7rem 1.7rem;
@@ -7,10 +7,10 @@
   position: fixed;
   transform: translateX(-50%);
   left: 50%;
-  bottom: 1rem;
+  // bottom: 1rem;
   gap: 0.8rem;
   border-radius: 3rem;
-  backdrop-filter: blur(15px);
+  // backdrop-filter: blur(15px);
 
   /* Make nav responsive */
   @media (max-width: 600px) {
@@ -50,7 +50,7 @@
     border-radius: 5px;
     font-size: 0.75rem;
     position: absolute;
-    //  bottom: -35px; /* Position below icon */
+    bottom: -35px; /* Position below icon */
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
