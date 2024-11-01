@@ -233,7 +233,7 @@ export const productProject = [
     source_link:
       "https://drive.google.com/file/d/1vrZBO9OIHR7rhhhYdGWlpf9_cCEez7vP/view?usp=drive_link",
     source_code_link:
-      "https://docs.google.com/presentation/d/1a829qjZvf08H_0x2-b3gdJSpAR6wKrtH/edit?usp=drivesdk&ouid=110213721605700921654&rtpof=true&sd=true",
+      "https://drive.google.com/file/d/1egBlRSU3HhZAcDFs-9CJsAn5BBJZ_fMe/view?usp=drive_link",
   },
   {
     name: `Enhancing Long-Form Content Engagement on YouTube with AI-Powered Recommendations`,
@@ -256,7 +256,7 @@ export const productProject = [
     source_link:
       "https://drive.google.com/file/d/1MYxckHKsZKa7EmMTMdgo44tqBsgA51Bu/view?usp=drive_link",
     source_code_link:
-      "https://docs.google.com/presentation/d/1MDZT7cHu-bpGlzWpNqIsv1v1FXEAdQ4b/edit?usp=drivesdk&ouid=110213721605700921654&rtpof=true&sd=true",
+      "https://drive.google.com/file/d/1YywQ7-sKBRchbLMOZ0FUB1OC7gPwVAyH/view?usp=drive_link",
   },
 ];
 export const allwebProject = [
@@ -346,7 +346,7 @@ export const allproductProject = [
     source_link:
       "https://drive.google.com/file/d/1vrZBO9OIHR7rhhhYdGWlpf9_cCEez7vP/view?usp=drive_link",
     source_code_link:
-      "https://docs.google.com/presentation/d/1a829qjZvf08H_0x2-b3gdJSpAR6wKrtH/edit?usp=drivesdk&ouid=110213721605700921654&rtpof=true&sd=true",
+      "https://drive.google.com/file/d/1egBlRSU3HhZAcDFs-9CJsAn5BBJZ_fMe/view?usp=drive_link",
   },
   {
     name: `Enhancing Long-Form Content Engagement on YouTube with AI-Powered Recommendations`,
@@ -369,7 +369,7 @@ export const allproductProject = [
     source_link:
       "https://drive.google.com/file/d/1MYxckHKsZKa7EmMTMdgo44tqBsgA51Bu/view?usp=drive_link",
     source_code_link:
-      "https://docs.google.com/presentation/d/1MDZT7cHu-bpGlzWpNqIsv1v1FXEAdQ4b/edit?usp=drivesdk&ouid=110213721605700921654&rtpof=true&sd=true",
+      "https://drive.google.com/file/d/1YywQ7-sKBRchbLMOZ0FUB1OC7gPwVAyH/view?usp=drive_link",
   },
 ];
 
@@ -403,16 +403,9 @@ const experiences = [
     date: "Jan 2022 - Present",
     link: "",
     points: [
-      `Developed and customized numerous Dashboards and Master-screens using React.js and
-       Asp.net Core APIs, resulting in seamless data integration with SAP, SPES, and other systems;
-       enhanced data accessibility and visualization for improved decision-making.`,
-      `Enhanced data accessibility and visualization for improved decision-making. Optimized system performance by refactoring stored procedures utilized in SSRS to generate
-      reports; streamlined report generation process, reducing time spent by 40% and ensuring
-      accurate and timely delivery of critical business insights.`,
-      `My solutions have transformed data visualization, resulting in visually captivating
-      representations of complex datasets. By implementing interactive charts, graphs, and tables,
-      I've facilitated a 40% improvement in data comprehension, empowering decision-makers to
-      extract actionable insights swiftly.`,
+      `Developed and customized dashboards and master screens using React.js and ASP.NET Core APIs, enabling seamless data integration with SAP, SPES, and other systems to enhance data accessibility and visualization for better decision-making.`,
+      `Enhanced data accessibility and visualization for better decision-making. Optimized system performance by refactoring SSRS stored procedures, reducing report generation time by 40% and ensuring timely, accurate delivery of critical business insights`,
+      `Transformed data visualization with interactive charts, graphs, and tables, boosting data comprehension by 40% and enabling decision-makers to extract actionable insights swiftly.`,
       "Using technologies like React.Js,Next.Js, SQL, C#, .NET ,Azure and Git.",
     ],
     link: "",
