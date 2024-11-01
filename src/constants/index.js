@@ -403,8 +403,8 @@ const experiences = [
     date: "Jan 2022 - Present",
     link: "",
     points: [
-      `Developed and customized dashboards and master screens using React.js and ASP.NET Core APIs, enabling seamless data integration with SAP, SPES, and other systems to enhance data accessibility and visualization for better decision-making.`,
-      `Enhanced data accessibility and visualization for better decision-making. Optimized system performance by refactoring SSRS stored procedures, reducing report generation time by 40% and ensuring timely, accurate delivery of critical business insights`,
+      `Developed dashboards and master screens with React.js and ASP.NET Core APIs, integrating data from SAP, SPES, and other systems to improve accessibility and visualization for decision-making.`,
+      `Optimized data accessibility, visualization, and system performance by refactoring SSRS procedures, cutting report generation time by 40% and ensuring timely, accurate business insights.`,
       `Transformed data visualization with interactive charts, graphs, and tables, boosting data comprehension by 40% and enabling decision-makers to extract actionable insights swiftly.`,
       "Using technologies like React.Js,Next.Js, SQL, C#, .NET ,Azure and Git.",
     ],
