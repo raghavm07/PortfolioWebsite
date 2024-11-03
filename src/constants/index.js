@@ -444,7 +444,7 @@ const educations = [
 
 const values = [
   {
-    name: "Emapthy",
+    name: "Empathy",
     image: empathy,
   },
   {
