@@ -28,7 +28,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`relative w-full h-[45vh] sm:h-[65vh] mx-auto`}>
+    <section className={`relative w-full h-[50vh] sm:h-[70vh] mx-auto`}>
       <div className="flex">
         <div
           className={`head1 absolute  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
