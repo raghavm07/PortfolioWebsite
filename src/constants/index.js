@@ -216,9 +216,7 @@ export const productProject = [
   {
     name: "Sparta.AI",
     description: `A unified AI-powered tool that assists creators in producing engaging videos, right from from
-ideation to publishing, on platforms like YouTube and TikTok. This tool, a vertical AI stack, would be targeted at existing
-creators looking for productivity gains as well as aspiring creators who want to begin their content creation journey
-without the complexity and investment of current content creation processes and tools.`,
+ideation to publishing, on platforms like YouTube and TikTok.`,
     tags: [
       {
         name: "Prototype",
@@ -354,9 +352,7 @@ export const allwebProject = [
 export const allproductProject = [{
     name: "Sparta.AI",
     description: `A unified AI-powered tool that assists creators in producing engaging videos, right from from
-ideation to publishing, on platforms like YouTube and TikTok. This tool, a vertical AI stack, would be targeted at existing
-creators looking for productivity gains as well as aspiring creators who want to begin their content creation journey
-without the complexity and investment of current content creation processes and tools.`,
+ideation to publishing, on platforms like YouTube and TikTok.`,
     tags: [
       {
         name: "Prototype",
