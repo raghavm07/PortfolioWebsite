@@ -28,6 +28,7 @@ import {
   sdlc,
   stakeholders,
   C,
+  spartaAI,
 } from "../assets";
 
 const profiles = [
@@ -213,6 +214,32 @@ export const webProject = [
 
 export const productProject = [
   {
+    name: "Sparta.AI",
+    description: `A unified AI-powered tool that assists creators in producing engaging videos, right from from
+ideation to publishing, on platforms like YouTube and TikTok. This tool, a vertical AI stack, would be targeted at existing
+creators looking for productivity gains as well as aspiring creators who want to begin their content creation journey
+without the complexity and investment of current content creation processes and tools.`,
+    tags: [
+      {
+        name: "Prototype",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Intelectual Design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Metrics",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: spartaAI,
+    source_link:
+      "https://drive.google.com/file/d/1bNfpGEsJwTgsCi1vKuLDu8C535BXVWzf/view?usp=sharing",
+    source_code_link:
+      "https://drive.google.com/file/d/1bNfpGEsJwTgsCi1vKuLDu8C535BXVWzf/view?usp=sharing",
+  },
+    {
     name: "Legacy Quest",
     description: `Wealth transfer is a critical issue that is often overlooked, resulting in significant personal, familial, and economic consequences. This has led to - 1)Untracked Assets, 2)Family Conflicts, 3)Idle Savings Disruption of Financial Futures`,
     tags: [
@@ -324,7 +351,32 @@ export const allwebProject = [
   },
 ];
 
-export const allproductProject = [
+export const allproductProject = [{
+    name: "Sparta.AI",
+    description: `A unified AI-powered tool that assists creators in producing engaging videos, right from from
+ideation to publishing, on platforms like YouTube and TikTok. This tool, a vertical AI stack, would be targeted at existing
+creators looking for productivity gains as well as aspiring creators who want to begin their content creation journey
+without the complexity and investment of current content creation processes and tools.`,
+    tags: [
+      {
+        name: "Prototype",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Intelectual Design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Metrics",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: spartaAI,
+    source_link:
+      "https://drive.google.com/file/d/1bNfpGEsJwTgsCi1vKuLDu8C535BXVWzf/view?usp=sharing",
+    source_code_link:
+      "https://drive.google.com/file/d/1bNfpGEsJwTgsCi1vKuLDu8C535BXVWzf/view?usp=sharing",
+  },
   {
     name: "Legacy Quest",
     description: `Wealth transfer is a critical issue that is often overlooked, resulting in significant personal, familial, and economic consequences. This has led to - 1)Untracked Assets, 2)Family Conflicts, 3)Idle Savings Disruption of Financial Futures`,
