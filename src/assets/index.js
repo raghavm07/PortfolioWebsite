@@ -63,6 +63,7 @@ import db from "./db.jpg";
 import sdlc from "./sdlc.webp";
 import stakeholders from "./stakeholders.jpg";
 import drive from "./drive.jpeg";
+import spartaAI from "./sparta-ai-icon.png";
 
 export {
   logo,
@@ -121,4 +122,5 @@ export {
   stakeholders,
   drive,
   C,
+  spartaAI,
 };
