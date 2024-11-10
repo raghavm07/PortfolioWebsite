@@ -237,7 +237,7 @@ without the complexity and investment of current content creation processes and 
     source_link:
       "https://drive.google.com/file/d/1bNfpGEsJwTgsCi1vKuLDu8C535BXVWzf/view?usp=sharing",
     source_code_link:
-      "https://drive.google.com/file/d/1bNfpGEsJwTgsCi1vKuLDu8C535BXVWzf/view?usp=sharing",
+      "https://drive.google.com/file/d/11zobVq1VPkyUk5t0OLd3YqzXeZ8JwzF5/view?usp=drive_link",
   },
     {
     name: "Legacy Quest",
@@ -375,7 +375,7 @@ without the complexity and investment of current content creation processes and 
     source_link:
       "https://drive.google.com/file/d/1bNfpGEsJwTgsCi1vKuLDu8C535BXVWzf/view?usp=sharing",
     source_code_link:
-      "https://drive.google.com/file/d/1bNfpGEsJwTgsCi1vKuLDu8C535BXVWzf/view?usp=sharing",
+      "https://drive.google.com/file/d/11zobVq1VPkyUk5t0OLd3YqzXeZ8JwzF5/view?usp=drive_link",
   },
   {
     name: "Legacy Quest",
