@@ -96,7 +96,7 @@ const ProjectCard = ({
   );
 };
 const AllProjects = () => {
-  const [selected, setSelected] = useState("allproductProject");
+  const [selected, setSelected] = useState("product");
   const [data, setData] = useState([]);
   const navigate = useNavigate();
 
