@@ -64,6 +64,7 @@ import sdlc from "./sdlc.webp";
 import stakeholders from "./stakeholders.jpg";
 import drive from "./drive.jpeg";
 import spartaAI from "./sparta-ai-icon.png";
+import rethink from "./rethink.jpg";
 
 export {
   logo,
@@ -123,4 +124,5 @@ export {
   drive,
   C,
   spartaAI,
+  rethink,
 };

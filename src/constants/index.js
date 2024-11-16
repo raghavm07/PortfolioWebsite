@@ -29,6 +29,7 @@ import {
   stakeholders,
   C,
   spartaAI,
+  rethink,
 } from "../assets";
 
 const profiles = [
@@ -37,27 +38,27 @@ const profiles = [
     icon: linkedin,
     name: "LinkedIn",
   },
-  {
-    link: "https://leetcode.com/u/raghavm79/",
-    icon: leetcode,
-    name: "LeetCode",
-  },
+  // {
+  //   link: "https://leetcode.com/u/raghavm79/",
+  //   icon: leetcode,
+  //   name: "LeetCode",
+  // },
   {
     link: "https://github.com/raghavm07",
     icon: github,
     name: "GitHub",
   },
 
-  {
-    link: "https://www.geeksforgeeks.org/user/raghavm79/",
-    icon: "https://img.icons8.com/color/344/GeeksforGeeks.png",
-    name: "GeekForGeeks",
-  },
-  {
-    link: "https://www.hackerrank.com/profile/raghavm79",
-    icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/344/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-color-tal-revivo.png",
-    name: "HackerRank",
-  },
+  // {
+  //   link: "https://www.geeksforgeeks.org/user/raghavm79/",
+  //   icon: "https://img.icons8.com/color/344/GeeksforGeeks.png",
+  //   name: "GeekForGeeks",
+  // },
+  // {
+  //   link: "https://www.hackerrank.com/profile/raghavm79",
+  //   icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/344/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-color-tal-revivo.png",
+  //   name: "HackerRank",
+  // },
   {
     link: "https://medium.com/@raghavm79",
     icon: medium,
@@ -78,30 +79,30 @@ const achievements = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "Bootstrap",
-    icon: "https://img.icons8.com/color/480/000000/bootstrap.png",
-  },
+  // {
+  //   name: "Bootstrap",
+  //   icon: "https://img.icons8.com/color/480/000000/bootstrap.png",
+  // },
   {
     name: "Google Cloud",
     icon: "https://img.icons8.com/color/480/000000/google-cloud.png",
   },
-  {
-    name: "C++ tool",
-    icon: "https://img.icons8.com/color/480/000000/c-plus-plus-logo.png",
-  },
+  // {
+  //   name: "C++ tool",
+  //   icon: "https://img.icons8.com/color/480/000000/c-plus-plus-logo.png",
+  // },
   {
     name: "C#",
     icon: C,
@@ -122,10 +123,10 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "Git",
     icon: git,
@@ -215,8 +216,7 @@ export const webProject = [
 export const productProject = [
   {
     name: "Sparta.AI",
-    description: `A unified AI-powered tool that assists creators in producing engaging videos, right from from
-ideation to publishing, on platforms like YouTube and TikTok.`,
+    description: `A unified AI-powered tool that assists creators in producing engaging videos, right from from ideation to publishing, on platforms like YouTube and TikTok.`,
     tags: [
       {
         name: "Prototype",
@@ -237,7 +237,7 @@ ideation to publishing, on platforms like YouTube and TikTok.`,
     source_code_link:
       "https://drive.google.com/file/d/11zobVq1VPkyUk5t0OLd3YqzXeZ8JwzF5/view?usp=drive_link",
   },
-    {
+  {
     name: "Legacy Quest",
     description: `Wealth transfer is a critical issue that is often overlooked, resulting in significant personal, familial, and economic consequences. This has led to - 1)Untracked Assets, 2)Family Conflicts, 3)Idle Savings Disruption of Financial Futures`,
     tags: [
@@ -285,7 +285,7 @@ ideation to publishing, on platforms like YouTube and TikTok.`,
   },
 ];
 export const allwebProject = [
-   {
+  {
     name: "Pokedex",
     description:
       "Created an impressive website made using React using Pokemon Api",
@@ -349,7 +349,8 @@ export const allwebProject = [
   },
 ];
 
-export const allproductProject = [{
+export const allproductProject = [
+  {
     name: "Sparta.AI",
     description: `A unified AI-powered tool that assists creators in producing engaging videos, right from from
 ideation to publishing, on platforms like YouTube and TikTok.`,
@@ -444,7 +445,7 @@ const thoughts = [
 
 const experiences = [
   {
-    title: "Software Devloper",
+    title: "Software/Product Devloper",
     company_name: "Motherson Technology Services Limited",
     icon: bny,
     iconBg: "#383E56",
@@ -462,12 +463,21 @@ const experiences = [
 
 const educations = [
   {
+    degree: "Product Management",
+    //branch: "CSE",
+    marks: "CGPA : 9.42 / 10",
+    name: "Rethink Systems",
+    from: "Shravan Tickoo",
+    year: "2024",
+    image: rethink,
+  },
+  {
     degree: "Bachelor of Engineering",
     branch: "CSE",
     marks: "CGPA : 9.42 / 10",
     name: "Krishna Engineering College",
     from: "AKTU",
-    year: "2018 - 2022",
+    year: "2022",
     image: clg,
   },
   {
@@ -475,7 +485,7 @@ const educations = [
     branch: "Science",
     marks: "Percentage : 89.88 %",
     from: "Delhi",
-    name: "Little Flowers Public Sr Sec School",
+    name: "L.F.P Sr Sec School",
     year: "2018",
     image: school,
   },
@@ -484,7 +494,7 @@ const educations = [
     branch: "SSC",
     marks: "Percentage : 95 %",
     from: "Delhi",
-    name: "Little Flowers Public Sr Sec School",
+    name: "L.F.P Sr Sec School",
     year: "2016",
     image: school,
   },
