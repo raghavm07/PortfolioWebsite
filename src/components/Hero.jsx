@@ -17,12 +17,12 @@ const Hero = () => {
     init(textRef.current, {
       showCursor: true,
       strings: [
-        " SDE at Motherson ",
-        " Aspiring Product Manager ",
-        " Volleyball Player ",
-        " Mentor ",
-        " Software Developer ",
+        " Product Manager ",
         " Tech Enthusiast ",
+        " SDE at Motherson ",
+        //  " Volleyball Player ",
+        // " Mentor ",
+        //  " Software Developer ",
       ],
     });
   }, []);
