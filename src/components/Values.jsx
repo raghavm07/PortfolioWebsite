@@ -25,8 +25,8 @@ const FeedbackCard = ({
       <img
         src={image}
         alt={`feedback_by-${name}`}
-        width="80"
-        height="80"
+        width="150"
+        height="150"
         className="rounded-full object-cover"
       />
       <div className="mt-3 flex-1 flex flex-col">
@@ -52,7 +52,7 @@ const Values = () => {
         </motion.div>
       </div>
       <div
-        className={`-mt-20 justify-center pb-14 ${styles.paddingX} flex flex-wrap gap-7`}
+        className={`-mt-28 justify-center pb-8 ${styles.paddingX} flex flex-wrap gap-7`}
       >
         {values.map((values, index) => (
           <FeedbackCard key={values.name} index={index} {...values} />

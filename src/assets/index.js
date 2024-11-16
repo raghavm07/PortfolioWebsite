@@ -12,9 +12,9 @@ import demo from "./demo.png";
 import linkedin from "./linkedin.png";
 import medium from "./medium.png";
 
-import empathy from "./empathy.jpg";
-import resilience from "./resilience.jpg";
-import innovation from "./innovation.png";
+import empathy from "./empathy.png";
+import resilience from "./resilience.png";
+import innovation from "./innovation.jpg";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
