@@ -66,6 +66,11 @@ import stakeholders from "./stakeholders.jpg";
 import drive from "./drive.jpeg";
 import spartaAI from "./sparta-ai-icon.png";
 import rethink from "./rethink.jpg";
+import Ct from "./ct.jpg";
+import reacttool from "./reacttool.jpg";
+import js from "./js.png";
+import excel from "./excel.png";
+import azure from "./azure.png";
 
 export {
   logo,
@@ -127,4 +132,9 @@ export {
   spartaAI,
   rethink,
   Figma,
+  Ct,
+  reacttool,
+  js,
+  excel,
+  azure,
 };

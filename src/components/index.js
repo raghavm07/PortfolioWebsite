@@ -16,6 +16,7 @@ import Achievement from "./Achievement";
 import Education from "./Education";
 import Footer from "./Footer";
 import AllProjects from "./AllProjects";
+import AllCourses from "./AllCourses";
 import Values from "./Values";
 import Published from "./Published";
 import Courses from "./Courses";
@@ -40,4 +41,5 @@ export {
   Values,
   Published,
   Courses,
+  AllCourses,
 };

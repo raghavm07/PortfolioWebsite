@@ -31,6 +31,11 @@ import {
   spartaAI,
   rethink,
   Figma,
+  Ct,
+  reacttool,
+  js,
+  excel,
+  azure,
 } from "../assets";
 
 const profiles = [
@@ -90,7 +95,7 @@ const technologies = [
   // },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: "https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-225993.png?f=webp&w=256",
   },
   {
     name: "Figma",
@@ -101,8 +106,8 @@ const technologies = [
   //   icon: "https://img.icons8.com/color/480/000000/bootstrap.png",
   // },
   {
-    name: "Google Cloud",
-    icon: "https://img.icons8.com/color/480/000000/google-cloud.png",
+    name: "Azure",
+    icon: "https://cdn.iconscout.com/icon/free/png-512/free-azure-logo-icon-download-in-svg-png-gif-file-formats--microsoft-destination-brand-logos-pack-icons-1583129.png?f=webp&w=256",
   },
   // {
   //   name: "C++ tool",
@@ -110,11 +115,11 @@ const technologies = [
   // },
   {
     name: "C#",
-    icon: C,
+    icon: "https://cdn.iconscout.com/icon/free/png-512/free-c-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226082.png?f=webp&w=256",
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: "https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=256",
   },
   {
     name: "Tailwind CSS",
@@ -137,8 +142,8 @@ const technologies = [
     icon: git,
   },
   {
-    name: "MySql",
-    icon: "https://img.icons8.com/color/480/000000/mysql-logo.png",
+    name: "Sql",
+    icon: "https://cdn.iconscout.com/icon/free/png-512/free-sql-logo-icon-download-in-svg-png-gif-file-formats--microsoft-server-brand-brands-pack-logos-icons-190807.png?f=webp&w=256",
   },
 ];
 
@@ -455,15 +460,52 @@ const courses = [
   },
   {
     name: "Complete React Developer (w/ Redux, Hooks, GraphQL)",
-    image: reactjs,
+    image: reacttool,
     source_link:
       "https://www.udemy.com/course/complete-react-developer-zero-to-mastery",
   },
   {
     name: "Asp.Net Core 9 (.NET 9)",
-    image: C,
+    image: Ct,
     source_link:
       "https://www.udemy.com/course/asp-net-core-true-ultimate-guide-real-project",
+  },
+];
+const AllCourses = [
+  {
+    name: "Product Management  By-: Shravan Tickoo",
+    image: rethink,
+    source_link: "https://rethinksystems.in/",
+  },
+  {
+    name: "Complete React Developer (w/ Redux, Hooks, GraphQL)",
+    image: reacttool,
+    source_link:
+      "https://www.udemy.com/course/complete-react-developer-zero-to-mastery",
+  },
+  {
+    name: "Asp.Net Core 9 (.NET 9)",
+    image: Ct,
+    source_link:
+      "https://www.udemy.com/course/asp-net-core-true-ultimate-guide-real-project",
+  },
+  {
+    name: "The Complete JavaScript Course 2024",
+    image: js,
+    source_link:
+      "https://www.udemy.com/course/the-complete-javascript-course/?couponCode=ACCAGE0923",
+  },
+  {
+    name: "Microsoft Excel",
+    image: excel,
+    source_link:
+      "https://www.udemy.com/course/microsoft-excel-improve-your-skills-quickly/",
+  },
+  {
+    name: "Microsoft Azure",
+    image: azure,
+    source_link:
+      "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification",
   },
 ];
 
@@ -549,4 +591,5 @@ export {
   achievements,
   thoughts,
   courses,
+  AllCourses,
 };

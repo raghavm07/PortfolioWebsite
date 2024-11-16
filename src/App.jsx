@@ -15,6 +15,7 @@ import {
   Published,
   AllProjects,
   Courses,
+  AllCourses,
 } from "./components";
 
 const Layout = () => (
@@ -46,6 +47,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/all-projects" element={<AllProjects />} />
+        <Route path="/all-courses" element={<AllCourses />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,13 +1,14 @@
 import Tilt from "react-parallax-tilt";
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { demo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { courses } from "../constants";
+import { AllCourses } from "../constants";
 import { useNavigate } from "react-router-dom";
-import "./Published.scss";
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import "./AllCourses.scss";
 
 const ProjectCard = ({
   index,
@@ -64,14 +65,14 @@ const ProjectCard = ({
     </motion.div>
   );
 };
+
 const Courses = () => {
-  const [selected, setSelected] = useState("courses");
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(AllCourses);
   const navigate = useNavigate();
 
   useEffect(() => {
-    setData(courses);
-  }, [selected]);
+    setData(AllCourses);
+  }, []);
 
   return (
     <>
@@ -79,8 +80,16 @@ const Courses = () => {
         whileInView={{ opacity: 1, transform: "none" }}
         variants={textVariant()}
       >
-        <p className={`${styles.sectionSubText} `}>Attended...</p>
-        <h2 className={`${styles.sectionHeadText}`}>Courses.</h2>
+        <div className="flex items-center mb-4">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center text-white hover:text-secondary transition-colors duration-300 border-0 bg-transparent mr-2"
+          >
+            <AiOutlineArrowLeft />
+          </button>
+          <p className={`${styles.sectionSubText}`}>Attended...</p>
+        </div>
+        <h2 className={`${styles.sectionHeadText}`}>All Courses.</h2>
       </motion.div>
 
       <div className="project w-full flex ">
@@ -96,30 +105,10 @@ const Courses = () => {
               </div>
             ))}
           </div>
-          <div className="project w-full flex">
-            <motion.p
-              whileInView={{ opacity: 1, transform: "none" }}
-              variants={fadeIn("", "", 0.1, 1)}
-              className="mt-3 text-secondary text-[17px] leading-[30px]"
-            >
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="view-all-button flex justify-center items-center mt-10"
-              >
-                <button
-                  className="rounded-full py-2 px-6 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold text-lg shadow-lg hover:from-purple-600 hover:to-indigo-600"
-                  onClick={() => navigate("/all-courses")}
-                >
-                  View All
-                </button>
-              </motion.div>
-            </motion.p>
-          </div>
         </motion.p>
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Courses, "courses");
+export default SectionWrapper(Courses, "AllCourses");
