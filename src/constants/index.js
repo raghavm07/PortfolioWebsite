@@ -486,15 +486,15 @@ const experiences = [
 ];
 
 const educations = [
-  {
-    degree: "Product Management",
-    //branch: "CSE",
-    marks: "CGPA : 9.42 / 10",
-    name: "Rethink Systems",
-    from: "Shravan Tickoo",
-    year: "2024",
-    image: rethink,
-  },
+  // {
+  //   degree: "Product Management",
+  //   //branch: "CSE",
+  //   marks: "CGPA : 9.42 / 10",
+  //   name: "Rethink Systems",
+  //   from: "Shravan Tickoo",
+  //   year: "2024",
+  //   image: rethink,
+  // },
   {
     degree: "Bachelor of Engineering",
     branch: "CSE",
