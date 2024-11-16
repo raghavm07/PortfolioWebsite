@@ -14,6 +14,7 @@ import {
   Values,
   Published,
   AllProjects,
+  Courses,
 } from "./components";
 
 const Layout = () => (
@@ -27,6 +28,7 @@ const Layout = () => (
     <Published />
     <Experience />
     <Education />
+    <Courses />
     <Achievement />
     <Profile />
     <Tech />

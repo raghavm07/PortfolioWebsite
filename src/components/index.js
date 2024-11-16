@@ -18,6 +18,7 @@ import Footer from "./Footer";
 import AllProjects from "./AllProjects";
 import Values from "./Values";
 import Published from "./Published";
+import Courses from "./Courses";
 
 export {
   Hero,
@@ -38,4 +39,5 @@ export {
   AllProjects,
   Values,
   Published,
+  Courses,
 };

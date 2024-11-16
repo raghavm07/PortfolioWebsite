@@ -30,6 +30,7 @@ import {
   C,
   spartaAI,
   rethink,
+  Figma,
 } from "../assets";
 
 const profiles = [
@@ -90,6 +91,10 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "Figma",
+    icon: Figma,
   },
   // {
   //   name: "Bootstrap",
@@ -442,6 +447,25 @@ const thoughts = [
       "https://medium.com/@raghavm79/understanding-the-software-development-life-cycle-sdlc-d1167dfdb009",
   },
 ];
+const courses = [
+  {
+    name: "Product Management  By-: Shravan Tickoo",
+    image: rethink,
+    source_link: "https://rethinksystems.in/",
+  },
+  {
+    name: "Complete React Developer (w/ Redux, Hooks, GraphQL)",
+    image: reactjs,
+    source_link:
+      "https://www.udemy.com/course/complete-react-developer-zero-to-mastery",
+  },
+  {
+    name: "Asp.Net Core 9 (.NET 9)",
+    image: C,
+    source_link:
+      "https://www.udemy.com/course/asp-net-core-true-ultimate-guide-real-project",
+  },
+];
 
 const experiences = [
   {
@@ -524,4 +548,5 @@ export {
   values,
   achievements,
   thoughts,
+  courses,
 };
