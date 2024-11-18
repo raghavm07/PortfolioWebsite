@@ -71,6 +71,7 @@ import reacttool from "./reacttool.jpg";
 import js from "./js.png";
 import excel from "./excel.png";
 import azure from "./azure.png";
+import nayaySetu from "./nayaySetu.jpg";
 
 export {
   logo,
@@ -137,4 +138,5 @@ export {
   js,
   excel,
   azure,
+  nayaySetu,
 };
