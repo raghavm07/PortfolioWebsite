@@ -288,7 +288,7 @@ export const productProject = [
         color: "pink-text-gradient",
       },
     ],
-    image: nyaySetu,
+    image: nayaySetu,
     source_link:
       "https://drive.google.com/file/d/1a3UtrFGg6cs7rTwCjHIGALUfRTxDRHT2/view?usp=drive_link",
     source_code_link:
@@ -448,7 +448,7 @@ ideation to publishing, on platforms like YouTube and TikTok.`,
         color: "pink-text-gradient",
       },
     ],
-    image: nyaySetu,
+    image: nayaySetu,
     source_link:
       "https://drive.google.com/file/d/1a3UtrFGg6cs7rTwCjHIGALUfRTxDRHT2/view?usp=drive_link",
     source_code_link:
