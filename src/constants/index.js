@@ -36,6 +36,7 @@ import {
   js,
   excel,
   azure,
+  nayaySetu
 } from "../assets";
 
 const profiles = [
@@ -271,8 +272,8 @@ export const productProject = [
       "https://drive.google.com/file/d/1egBlRSU3HhZAcDFs-9CJsAn5BBJZ_fMe/view?usp=drive_link",
   },
   {
-    name: `Enhancing Long-Form Content Engagement on YouTube with AI-Powered Recommendations`,
-    description: `YouTube has traditionally dominated long-form video content, offering creators lucrative ad revenue opportunities.However, the rise of short-form content is undermining long-form video traffic,threatening YouTube's established model.`,
+    name: `Nyaya Setu`,
+    description: `Access to justice for low-income individuals in Indiaʼs Tier 3 cities and rural areas faces significant challenges, with barriers such as inadequate infrastructure, financial constraints, and social biases hindering their ability to seek legal recourses and prevent them from exercising their rights effectively.`,
     tags: [
       {
         name: "PRD",
@@ -287,11 +288,11 @@ export const productProject = [
         color: "pink-text-gradient",
       },
     ],
-    image: youtube,
+    image: nyaySetu,
     source_link:
-      "https://drive.google.com/file/d/1MYxckHKsZKa7EmMTMdgo44tqBsgA51Bu/view?usp=drive_link",
+      "https://drive.google.com/file/d/1a3UtrFGg6cs7rTwCjHIGALUfRTxDRHT2/view?usp=drive_link",
     source_code_link:
-      "https://drive.google.com/file/d/1YywQ7-sKBRchbLMOZ0FUB1OC7gPwVAyH/view?usp=drive_link",
+      "https://drive.google.com/file/d/1UQWsQFwP5-uMi0phbnBVlmI5wSAAK0SJ/view?usp=drive_link",
   },
 ];
 export const allwebProject = [
@@ -429,6 +430,29 @@ ideation to publishing, on platforms like YouTube and TikTok.`,
       "https://drive.google.com/file/d/1MYxckHKsZKa7EmMTMdgo44tqBsgA51Bu/view?usp=drive_link",
     source_code_link:
       "https://drive.google.com/file/d/1YywQ7-sKBRchbLMOZ0FUB1OC7gPwVAyH/view?usp=drive_link",
+  },
+  {
+    name: `Nyaya Setu`,
+    description: `Access to justice for low-income individuals in Indiaʼs Tier 3 cities and rural areas faces significant challenges, with barriers such as inadequate infrastructure, financial constraints, and social biases hindering their ability to seek legal recourses and prevent them from exercising their rights effectively.`,
+    tags: [
+      {
+        name: "PRD",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Research",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Competitor Analysis",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nyaySetu,
+    source_link:
+      "https://drive.google.com/file/d/1a3UtrFGg6cs7rTwCjHIGALUfRTxDRHT2/view?usp=drive_link",
+    source_code_link:
+      "https://drive.google.com/file/d/1UQWsQFwP5-uMi0phbnBVlmI5wSAAK0SJ/view?usp=drive_link",
   },
 ];
 
