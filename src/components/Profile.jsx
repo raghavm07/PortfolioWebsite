@@ -3,6 +3,8 @@ import { SectionWrapper } from "../hoc";
 import { profiles } from "../constants";
 import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import { styles } from "../styles";
 import "./Profile.scss";
 
@@ -20,11 +22,16 @@ const Profile = () => {
             className="skill"
             data-aos="fade-up"
             data-aos-delay="200"
-            key={profile.id || index} // Use profile.id if available, otherwise fallback to index
+            key={profile.id || index}
           >
             <div className="icon-container">
               <a href={profile.link} target="_blank" rel="noopener noreferrer">
-                <img src={profile.icon} alt={profile.name} />
+                <LazyLoadImage
+                  src={profile.icon}
+                  alt={profile.name}
+                  //  effect="blur"
+                />
+
                 <span className="tooltip-text">{profile.name}</span>
               </a>
             </div>

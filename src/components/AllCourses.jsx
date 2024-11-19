@@ -9,6 +9,7 @@ import { AllCourses } from "../constants";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import "./AllCourses.scss";
 
 const ProjectCard = ({
@@ -38,6 +39,7 @@ const ProjectCard = ({
             src={image}
             alt="project_image"
             className="image w-full h-full object-cover rounded-2xl"
+            //effect="blur"
           />
           <div
             className="absolute inset-0 flex justify-center card-img_hover"
@@ -57,6 +59,7 @@ const ProjectCard = ({
                 src={demo}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
+                // effect="blur"
               />
             </div>
           </div>

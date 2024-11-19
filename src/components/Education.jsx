@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { educations } from "../constants";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Education.scss";
 
 const FeedbackCard = ({
@@ -32,6 +32,7 @@ const FeedbackCard = ({
         width="80"
         height="80"
         className="rounded-full object-cover"
+        //effect="blur"
       />
 
       <div className="mt-3 flex-1 flex flex-col">
@@ -70,7 +71,11 @@ const Education = () => {
         className={`-mt-20 justify-center pb-14 ${styles.paddingX} flex flex-wrap gap-7`}
       >
         {educations.map((education, index) => (
-          <FeedbackCard key={education.name} index={index} {...education} />
+          <FeedbackCard
+            key={`${education.name}` + `${index}`}
+            index={index}
+            {...education}
+          />
         ))}
       </div>
     </div>

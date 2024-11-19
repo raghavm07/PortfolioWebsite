@@ -6,6 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { values } from "../constants";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Education.scss";
 
 const FeedbackCard = ({
@@ -29,6 +30,7 @@ const FeedbackCard = ({
         height="150"
         className="rounded-full object-cover"
         alt={`feedback_by-${name}`}
+        // effect="blur"
       />
 
       <div className="mt-3 flex-1 flex flex-col">

@@ -10,6 +10,7 @@ import { SiGoogledrive } from "react-icons/si";
 import { BiLinkAlt } from "react-icons/bi";
 import { raghav } from "../assets";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -75,6 +76,7 @@ const Hero = () => {
             className="object-contain"
             src={raghav}
             alt="ProfileImage"
+            // effect="blur"
           />
         </div>
       </div>

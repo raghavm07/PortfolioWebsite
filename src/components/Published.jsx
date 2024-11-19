@@ -12,6 +12,7 @@ import ProjectList from "./ProjectList";
 import { FaMediumM } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Published.scss";
 
 const ProjectCard = ({
@@ -41,6 +42,7 @@ const ProjectCard = ({
             src={image}
             alt="project_image"
             className="image w-full h-full object-cover rounded-2xl"
+            // effect="blur"
           />
 
           <div
@@ -61,6 +63,7 @@ const ProjectCard = ({
                 src={demo}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
+                // effect="blur"
               />
             </div>
           </div>

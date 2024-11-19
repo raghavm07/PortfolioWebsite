@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import { styles } from "../styles";
 import { logo } from "../assets";
 import "./Navbar.scss";
@@ -42,7 +43,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain logo" />
+          <LazyLoadImage
+            src={logo}
+            alt="logo"
+            className="w-9 h-9 object-contain logo"
+            // effect="blur"
+          />
+
           <p className="sm:block text-white text-[18px] font-bold cursor-pointer flex ">
             raghav.mittal
           </p>

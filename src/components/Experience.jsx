@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -29,6 +29,7 @@ const ExperienceCard = ({ experience }) => {
             src={experience.icon}
             alt={experience.company_name}
             className="w-[60%] h-[60%] object-contain"
+            // effect="blur"
           />
         </div>
       }

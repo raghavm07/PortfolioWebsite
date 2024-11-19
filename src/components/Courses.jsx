@@ -8,6 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { courses } from "../constants";
 import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Published.scss";
 
 const ProjectCard = ({
@@ -37,6 +38,7 @@ const ProjectCard = ({
             src={image}
             alt="project_image"
             className="image w-full h-full object-cover rounded-2xl"
+            // effect="blur"
           />
 
           <div
@@ -53,10 +55,11 @@ const ProjectCard = ({
               onClick={() => window.open(source_link, "_blank")}
               className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              <LazyLoadImage
                 src={demo}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
+                // effect="blur"
               />
             </div>
           </div>

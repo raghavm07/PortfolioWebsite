@@ -11,6 +11,7 @@ import { list } from "../constants";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { allproductProject, allwebProject } from "../constants";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+//import "react-lazy-load-image-component/src/effects/blur.css";
 import ProjectList from "./ProjectList";
 
 const ProjectCard = ({
@@ -36,10 +37,11 @@ const ProjectCard = ({
         className="project-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full"
       >
         <div className="Box1 relative w-full h-full sm:h-[180px]">
-          <img
+          <LazyLoadImage
             src={image}
             alt="project_image"
             className="image w-full h-full object-cover rounded-2xl"
+            // effect="blur"
           />
 
           <div
@@ -58,6 +60,7 @@ const ProjectCard = ({
                 src={demo}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
+                // effect="blur"
               />
             </div>
             <div
@@ -68,6 +71,7 @@ const ProjectCard = ({
                 src={github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
+                // effect="blur"
               />
             </div>
           </div>
