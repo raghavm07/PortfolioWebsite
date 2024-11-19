@@ -7,6 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { courses } from "../constants";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./Published.scss";
 
 const ProjectCard = ({
@@ -32,7 +33,7 @@ const ProjectCard = ({
         className="publish-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full "
       >
         <div className="Box1 relative w-full h-[180px]">
-          <img
+          <LazyLoadImage
             src={image}
             alt="project_image"
             className="image w-full h-full object-cover rounded-2xl"

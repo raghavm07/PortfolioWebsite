@@ -11,6 +11,7 @@ import { thoughts } from "../constants";
 import ProjectList from "./ProjectList";
 import { FaMediumM } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./Published.scss";
 
 const ProjectCard = ({
@@ -36,7 +37,7 @@ const ProjectCard = ({
         className="publish-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full "
       >
         <div className="Box1 relative w-full h-[180px]">
-          <img
+          <LazyLoadImage
             src={image}
             alt="project_image"
             className="image w-full h-full object-cover rounded-2xl"
@@ -56,7 +57,7 @@ const ProjectCard = ({
               onClick={() => window.open(source_link, "_blank")}
               className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              <LazyLoadImage
                 src={demo}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"

@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { values } from "../constants";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./Education.scss";
 
 const FeedbackCard = ({
@@ -22,13 +23,14 @@ const FeedbackCard = ({
     className="Box2 p-5 rounded-3xl xs:w-[320px] w-full"
   >
     <div className="mt-7 flex flex-col justify-between items-center gap-1">
-      <img
+      <LazyLoadImage
         src={image}
-        alt={`feedback_by-${name}`}
         width="150"
         height="150"
         className="rounded-full object-cover"
+        alt={`feedback_by-${name}`}
       />
+
       <div className="mt-3 flex-1 flex flex-col">
         <p className="text-center text-white font-medium text-[16px]">
           <p className="text-center pink-text-gradient tracking-wider text-[18px]">

@@ -9,6 +9,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { SiGoogledrive } from "react-icons/si";
 import { BiLinkAlt } from "react-icons/bi";
 import { raghav } from "../assets";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -70,7 +71,11 @@ const Hero = () => {
           </div>
         </div>
         <div className="imgcontainer1 absolute violet-gradient">
-          <img src={raghav} alt="" className="object-contain" />
+          <LazyLoadImage
+            className="object-contain"
+            src={raghav}
+            alt="ProfileImage"
+          />
         </div>
       </div>
 

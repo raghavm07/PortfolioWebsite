@@ -8,6 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { AllCourses } from "../constants";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./AllCourses.scss";
 
 const ProjectCard = ({
@@ -33,12 +34,11 @@ const ProjectCard = ({
         className="publish-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full "
       >
         <div className="Box1 relative w-full h-[180px]">
-          <img
+          <LazyLoadImage
             src={image}
             alt="project_image"
             className="image w-full h-full object-cover rounded-2xl"
           />
-
           <div
             className="absolute inset-0 flex justify-center card-img_hover"
             style={{ alignItems: "center" }}
@@ -53,7 +53,7 @@ const ProjectCard = ({
               onClick={() => window.open(source_link, "_blank")}
               className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              <LazyLoadImage
                 src={demo}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"

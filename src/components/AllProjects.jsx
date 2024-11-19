@@ -10,6 +10,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { list } from "../constants";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { allproductProject, allwebProject } from "../constants";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import ProjectList from "./ProjectList";
 
 const ProjectCard = ({
@@ -53,7 +54,7 @@ const ProjectCard = ({
               onClick={() => window.open(source_link, "_blank")}
               className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              <LazyLoadImage
                 src={demo}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
@@ -63,7 +64,7 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              <LazyLoadImage
                 src={github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"

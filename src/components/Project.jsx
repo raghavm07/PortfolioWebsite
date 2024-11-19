@@ -10,6 +10,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { webProject, productProject } from "../constants";
 import ProjectList from "./ProjectList";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./Project.scss";
 
 const ProjectCard = ({
@@ -55,9 +56,9 @@ const ProjectCard = ({
               onClick={() => window.open(source_link, "_blank")}
               className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              <LazyLoadImage
                 src={demo}
-                alt="source code"
+                alt="sourceCode"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
@@ -65,9 +66,9 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              <LazyLoadImage
                 src={github}
-                alt="source code"
+                alt="sourcecode"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
@@ -89,7 +90,7 @@ const ProjectCard = ({
               key={`${name}-${tag.name}`}
               className={`text-[14px] ${tag.color}`}
             >
-              #{tag.name}
+              {tag.name}
             </p>
           ))}
         </div>
