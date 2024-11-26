@@ -117,9 +117,25 @@ const Published = () => {
             whileTap={{ scale: 0.95 }}
             className="view-all-button flex justify-center items-center mt-10 relative"
           >
-            <div className="rounded-full py-2 px-6 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold text-lg shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 flex items-center">
+            <div className="rounded-full   text-white font-semibold text-lg shadow-lgflex items-center">
               For More Visit
-              <div className="link1 flex gap-4 ml-4">
+            </div>
+          </motion.div>
+        </motion.p>
+      </div>
+      <div className="project w-full flex flex-row items-center justify-center ">
+        <motion.p
+          whileInView={{ opacity: 1, transform: "none" }}
+          variants={fadeIn("", "", 0.1, 1)}
+          className="text-secondary text-[17px] leading-[30px] text-center m-1"
+        >
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="view-all-button flex justify-center items-center  relative"
+          >
+            <div className="rounded-full  p-2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold text-lg shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 flex items-center">
+              <div className="link1 flex gap-4">
                 <a
                   href="https://www.linkedin.com/in/raghavmittal79/"
                   target="_blank"
@@ -127,6 +143,22 @@ const Published = () => {
                 >
                   <ImLinkedin className="text-white hover:text-gray-300 transition-colors duration-300 w-6 h-6" />
                 </a>
+              </div>
+            </div>
+          </motion.div>
+        </motion.p>
+        <motion.p
+          whileInView={{ opacity: 1, transform: "none" }}
+          variants={fadeIn("", "", 0.1, 1)}
+          className="text-secondary text-[17px] leading-[30px] text-center m-1"
+        >
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="view-all-button flex justify-center items-center  relative"
+          >
+            <div className="rounded-full  p-2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold text-lg shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300 flex items-center">
+              <div className="link1 flex gap-4 ">
                 <a
                   href="https://medium.com/@raghavm79"
                   target="_blank"

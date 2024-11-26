@@ -24,12 +24,12 @@ const Layout = () => (
       <Navbar />
       <Hero />
     </div>
-    <Values />
     <Project />
-    <Published />
+    <Courses />
     <Experience />
     <Education />
-    <Courses />
+    <Values />
+    <Published />
     <Achievement />
     <Profile />
     <Tech />

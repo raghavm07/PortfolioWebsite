@@ -127,7 +127,7 @@ const Project = () => {
         variants={textVariant()}
       >
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadText}`}>Proof of Work.</h2>
       </motion.div>
 
       <div className="project w-full flex">

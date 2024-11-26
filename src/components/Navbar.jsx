@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { fadeIn, textVariant } from "../utils/motion";
+import { motion, transform } from "framer-motion";
 //import "react-lazy-load-image-component/src/effects/blur.css";
 import { styles } from "../styles";
 import { logo } from "../assets";
@@ -57,7 +59,7 @@ const Navbar = () => {
         <Content />
 
         <div className="sm:flex gap-5">
-          <div
+          {/* <div
             className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer`}
           >
             <a
@@ -66,6 +68,32 @@ const Navbar = () => {
             >
               Resume
             </a>
+          </div> */}
+
+          <div className="project w-full flex">
+            <motion.p
+              whileInView={{ opacity: 1, transform: "none" }}
+              variants={fadeIn("", "", 0.1, 1)}
+              className=" text-secondary text-[17px] leading-[30px]"
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="view-all-button flex justify-center items-center "
+              >
+                <button
+                  className="rounded-full  px-6 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold text-lg shadow-lg hover:from-purple-600 hover:to-indigo-600"
+                  onClick={() => navigate("/all-projects")}
+                >
+                  <a
+                    href="https://drive.google.com/file/d/12JPCIUFkGR5p9WX8YtenwXDkTRWDQQHW/view?usp=drive_link"
+                    target="_blank"
+                  >
+                    Resume
+                  </a>
+                </button>
+              </motion.div>
+            </motion.p>
           </div>
         </div>
       </div>
