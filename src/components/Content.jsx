@@ -31,7 +31,7 @@ const Content = () => {
           aria-label={label}
         >
           {icon}
-          <span className="tooltip-text">{label}</span>
+          <span className="text-sm p-1 rounded-md">{label}</span>
         </a>
       ))}
     </div>
