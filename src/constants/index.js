@@ -457,7 +457,7 @@ ideation to publishing, on platforms like YouTube and TikTok.`,
   },
 {
     name: "Credible AI",
-    description: `The widespread proliferation of deepfake technology presents significant challenges for digital platforms, businesses,and individuals. While deepfakes offer positive applications in entertainment, education, and personalized content, their misuse has led to widespread societal, financial, and operational risks.`,
+    description: `The widespread proliferation of deepfake technology presents significant challenges. While deepfakes offer positive applications in entertainment, education, and personalized content, their misuse has led to widespread risks.`,
     tags: [
       {
         name: "System Design",
