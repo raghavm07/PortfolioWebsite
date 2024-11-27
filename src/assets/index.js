@@ -72,6 +72,8 @@ import js from "./js.png";
 import excel from "./excel.png";
 import azure from "./azure.png";
 import nayaySetu from "./nayaySetu.jpg";
+import credible from "./credible.jpg";
+
 
 export {
   logo,
@@ -139,4 +141,5 @@ export {
   excel,
   azure,
   nayaySetu,
+  credible
 };
