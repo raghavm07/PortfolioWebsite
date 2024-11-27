@@ -36,7 +36,8 @@ import {
   js,
   excel,
   azure,
-  nayaySetu
+  nayaySetu,
+  credible
 } from "../assets";
 
 const profiles = [
@@ -454,6 +455,31 @@ ideation to publishing, on platforms like YouTube and TikTok.`,
     source_code_link:
       "https://drive.google.com/file/d/1UQWsQFwP5-uMi0phbnBVlmI5wSAAK0SJ/view?usp=drive_link",
   },
+{
+    name: "Credible AI",
+    description: `The widespread proliferation of deepfake technology presents significant challenges for digital platforms, businesses,and individuals. While deepfakes offer positive applications in entertainment, education, and personalized content, their misuse has led to widespread societal, financial, and operational risks.`,
+    tags: [
+      {
+        name: "System Design",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Technical Feasibilty",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Metrics",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: credible,
+    source_link:
+      "https://drive.google.com/file/d/1dQjCwA9KQ_ExkbW1ihsGna6LhCj3ioSU/view?usp=drive_link",
+    source_code_link:
+      "https://drive.google.com/file/d/1P6IEkgm0pRS7z1CasdnBb_XVEsHVAphG/view?usp=drive_link",
+  },
+
+  
 ];
 
 const thoughts = [
