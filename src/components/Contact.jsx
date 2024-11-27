@@ -90,7 +90,9 @@ const Contact = () => {
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <h3 className={styles.sectionHeadText}>Let's talk.</h3>
-        <p className={styles.sectionSubText}>I am always open to collaborations and exploration</p>
+        <p className="sm:text-[13px] text-[12px] text-secondary uppercase tracking-wider">
+          I am always open to collaborations and exploration
+        </p>
 
         <form
           ref={formRef}
@@ -98,7 +100,7 @@ const Contact = () => {
           className="mt-3 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-3">Your Name</span>
+            {/* <span className="text-white font-medium mb-3">Your Name</span> */}
             <input
               type="text"
               name="name"
@@ -110,25 +112,25 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-3">Your email</span>
+            {/* <span className="text-white font-medium mb-3">Your email</span> */}
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               aria-label="Your email"
               className="bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-3">Your Message</span>
+            {/* <span className="text-white font-medium mb-3">Your Message</span> */}
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What you want to say?"
+              placeholder="Your Message"
               aria-label="Your Message"
               className="bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-lg border-none font-medium"
             />
