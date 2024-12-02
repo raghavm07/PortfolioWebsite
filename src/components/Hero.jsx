@@ -59,9 +59,9 @@ const Hero = () => {
               >
                 <ImLinkedin />
               </a>
-              <a href="https://github.com/raghavm07" target="_blank">
+              {/* <a href="https://github.com/raghavm07" target="_blank">
                 <AiOutlineGithub />
-              </a>
+              </a> */}
               <a
                 href="https://drive.google.com/drive/folders/1LfQ8Cg-BnI5NZiLAEOIm6a2ds4bGtTYn?usp=sharing"
                 target="_blank"

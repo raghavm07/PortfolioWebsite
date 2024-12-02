@@ -27,9 +27,9 @@ const Layout = () => (
     <Project />
     <Courses />
     <Experience />
-    <Education />
-    <Values />
     <Published />
+    <Values />
+    <Education />
     <Achievement />
     <Profile />
     <Tech />

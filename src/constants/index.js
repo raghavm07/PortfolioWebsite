@@ -37,7 +37,7 @@ import {
   excel,
   azure,
   nayaySetu,
-  credible
+  credible,
 } from "../assets";
 
 const profiles = [
@@ -455,7 +455,7 @@ ideation to publishing, on platforms like YouTube and TikTok.`,
     source_code_link:
       "https://drive.google.com/file/d/1UQWsQFwP5-uMi0phbnBVlmI5wSAAK0SJ/view?usp=drive_link",
   },
-{
+  {
     name: "Credible AI",
     description: `The widespread proliferation of deepfake technology presents significant challenges. While deepfakes offer positive applications in entertainment, education, and personalized content, their misuse has led to widespread risks.`,
     tags: [
@@ -478,8 +478,6 @@ ideation to publishing, on platforms like YouTube and TikTok.`,
     source_code_link:
       "https://drive.google.com/file/d/1P6IEkgm0pRS7z1CasdnBb_XVEsHVAphG/view?usp=drive_link",
   },
-
-  
 ];
 
 const thoughts = [
@@ -509,16 +507,16 @@ const courses = [
     source_link: "https://rethinksystems.in/",
   },
   {
+    name: "Microsoft Excel",
+    image: excel,
+    source_link:
+      "https://www.udemy.com/course/microsoft-excel-improve-your-skills-quickly/",
+  },
+  {
     name: "Complete React Developer (w/ Redux, Hooks, GraphQL)",
     image: reacttool,
     source_link:
       "https://www.udemy.com/course/complete-react-developer-zero-to-mastery",
-  },
-  {
-    name: "Asp.Net Core 9 (.NET 9)",
-    image: Ct,
-    source_link:
-      "https://www.udemy.com/course/asp-net-core-true-ultimate-guide-real-project",
   },
 ];
 const AllCourses = [
@@ -534,6 +532,12 @@ const AllCourses = [
       "https://www.udemy.com/course/complete-react-developer-zero-to-mastery",
   },
   {
+    name: "Microsoft Excel",
+    image: excel,
+    source_link:
+      "https://www.udemy.com/course/microsoft-excel-improve-your-skills-quickly/",
+  },
+  {
     name: "Asp.Net Core 9 (.NET 9)",
     image: Ct,
     source_link:
@@ -544,12 +548,6 @@ const AllCourses = [
     image: js,
     source_link:
       "https://www.udemy.com/course/the-complete-javascript-course/?couponCode=ACCAGE0923",
-  },
-  {
-    name: "Microsoft Excel",
-    image: excel,
-    source_link:
-      "https://www.udemy.com/course/microsoft-excel-improve-your-skills-quickly/",
   },
   {
     name: "Microsoft Azure",

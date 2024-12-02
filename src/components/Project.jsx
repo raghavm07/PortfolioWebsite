@@ -136,7 +136,8 @@ const Project = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] leading-[30px]"
         >
-          <ul>
+          {/*  To show buttons - Product & Web */}
+          {/* <ul>
             {list.map((item) => (
               <ProjectList
                 key={item.id}
@@ -146,7 +147,7 @@ const Project = () => {
                 id={item.id}
               />
             ))}
-          </ul>
+          </ul> */}
 
           <div className="box mt-10 flex flex-wrap justify-center">
             {data.map((project, index) => (
