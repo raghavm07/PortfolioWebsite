@@ -8,7 +8,7 @@ import {
   mongodb,
   git,
   threejs,
-  bny,
+  motherson,
   clg,
   school,
   chitchat,
@@ -559,9 +559,9 @@ const AllCourses = [
 
 const experiences = [
   {
-    title: "Software/Product Devloper",
+    title: "Software Devloper",
     company_name: "Motherson Technology Services Limited",
-    icon: bny,
+    icon: motherson,
     iconBg: "#383E56",
     date: "Jan 2022 - Present",
     link: "",

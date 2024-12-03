@@ -30,7 +30,7 @@ import C from "./tech/C.png";
 
 import holopin from "./holopin.png";
 import hf from "./hf.svg";
-import bny from "./bny.png";
+import motherson from "./motherson.png";
 import clg from "./clg.png";
 import school from "./school.png";
 import leetcode from "./leetcode.png";
@@ -74,7 +74,6 @@ import azure from "./azure.png";
 import nayaySetu from "./nayaySetu.jpg";
 import credible from "./credible.jpg";
 
-
 export {
   logo,
   backend,
@@ -93,7 +92,7 @@ export {
   threejs,
   hf,
   holopin,
-  bny,
+  motherson,
   demo,
   clg,
   school,
@@ -141,5 +140,5 @@ export {
   excel,
   azure,
   nayaySetu,
-  credible
+  credible,
 };
