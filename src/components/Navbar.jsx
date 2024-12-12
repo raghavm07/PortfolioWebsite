@@ -86,7 +86,7 @@ const Navbar = () => {
                   onClick={() => navigate("/all-projects")}
                 >
                   <a
-                    href="https://drive.google.com/file/d/12JPCIUFkGR5p9WX8YtenwXDkTRWDQQHW/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1LJV882nzcjylONn5JYZTAG7DB_zFOQYm/view?usp=sharing"
                     target="_blank"
                   >
                     Resume
