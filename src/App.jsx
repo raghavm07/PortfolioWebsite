@@ -25,8 +25,8 @@ const Layout = () => (
       <Hero />
     </div>
     <Project />
-    <Courses />
     <Experience />
+    <Courses />
     <Published />
     <Values />
     <Education />
