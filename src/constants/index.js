@@ -559,6 +559,20 @@ const AllCourses = [
 
 const experiences = [
   {
+    title: "Product Management Fellow",
+    company_name: "Rethink Systems By Shravan Tickoo",
+    icon: rethink,
+    iconBg: "#383E56",
+    date: "Oct 2024 - Dec 2024",
+    link: "",
+    points: [
+      `Conducted in-depth problem validation through rigorous user research, identifying key pain points and developing tailored solutions.`,
+      `Gained hands-on experience in creating Product Requirement Documents (PRDs), wireframing, prototyping, and system design.`,
+      `Acquired comprehensive knowledge of end-to-end product management processes, including user-centered design and iterative development.`,
+    ],
+    link: "",
+  },
+  {
     title: "Software Devloper",
     company_name: "Motherson Technology Services Limited",
     icon: motherson,
@@ -566,9 +580,8 @@ const experiences = [
     date: "Jan 2022 - Present",
     link: "",
     points: [
-      `Developed dashboards and master screens with React.js and ASP.NET Core APIs, integrating data from SAP, SPES, and other systems to improve accessibility and visualization for decision-making.`,
-      `Optimized data accessibility, visualization, and system performance by refactoring SSRS procedures, cutting report generation time by 40% and ensuring timely, accurate business insights.`,
-      `Transformed data visualization with interactive charts, graphs, and tables, boosting data comprehension by 40% and enabling decision-makers to extract actionable insights swiftly.`,
+      `Collaborated with stakeholders and cross-functional teams to define requirements and deliver interactive dashboards, improving data-driven decision-making for end-users.`,
+      `Spearheaded backend optimization initiatives, reducing report generation time by 40% to enhance system efficiency and align with user needs.`,
       "Using technologies like React.Js,Next.Js, SQL, C#, .NET ,Azure and Git.",
     ],
     link: "",
