@@ -25,7 +25,7 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   };
 
-  const resumeUrl = "https://drive.google.com/file/d/1LJV882nzcjylONn5JYZTAG7DB_zFOQYm/view?usp=sharing";
+  const resumeUrl = "https://drive.google.com/file/d/1sDTMqLIzZAs-ko8VUJgxDSHkUxLqv25v/view?usp=sharing";
 
   return (
     <nav
