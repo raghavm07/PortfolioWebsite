@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { demo } from "../assets";
+import { ppt } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { list } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -36,11 +37,16 @@ const ProjectCard = ({
         }}
         className="project-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full"
       >
-        <div id="Box1" className="Box1 relative w-full h-full sm:h-[180px] ">
+        <div
+          id="Box1"
+          className="Box1 relative w-full h-full sm:h-[180px] "
+          onClick={() => window.open(source_link, "_blank")}
+        >
           <LazyLoadImage
             src={image}
             alt="project_image"
             className="image w-full h-full object-cover rounded-2xl"
+
             // effect="blur"
           />
           <div
@@ -69,7 +75,7 @@ const ProjectCard = ({
               className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
             >
               <LazyLoadImage
-                src={github}
+                src={ppt}
                 alt="sourcecode"
                 className="w-1/2 h-1/2 object-contain"
                 //  effect="blur"

@@ -66,6 +66,8 @@ import stakeholders from "./stakeholders.jpg";
 import drive from "./drive.jpeg";
 import spartaAI from "./sparta-ai-icon.png";
 import rethink from "./rethink.jpg";
+import rethink1 from "./rethink1.png";
+import ppt from "./ppt.png";
 import Ct from "./ct.jpg";
 import reacttool from "./reacttool.jpg";
 import js from "./js.png";
@@ -141,4 +143,6 @@ export {
   azure,
   nayaySetu,
   credible,
+  rethink1,
+  ppt,
 };

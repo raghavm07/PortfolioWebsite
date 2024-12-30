@@ -4,7 +4,7 @@ import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import Tilt from "react-parallax-tilt";
-import { github, demo } from "../assets";
+import { github, demo, ppt } from "../assets";
 import "./AllProjects.scss";
 import { fadeIn, textVariant } from "../utils/motion";
 import { list } from "../constants";
@@ -36,7 +36,10 @@ const ProjectCard = ({
         }}
         className="project-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full"
       >
-        <div className="Box1 relative w-full h-full sm:h-[180px]">
+        <div
+          className="Box1 relative w-full h-full sm:h-[180px]"
+          onClick={() => window.open(source_link, "_blank")}
+        >
           <LazyLoadImage
             src={image}
             alt="project_image"
@@ -48,7 +51,9 @@ const ProjectCard = ({
             className="absolute inset-0 flex justify-center card-img_hover"
             style={{ alignItems: "center" }}
           >
-            <h3 className="text-black font-bold text-[16px]">{name}</h3>
+            <h3 className="text-black font-bold text-[16px] text-center">
+              {name}
+            </h3>
           </div>
 
           <div className="title absolute inset-0 flex justify-end card-img_hover">
@@ -68,7 +73,7 @@ const ProjectCard = ({
               className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
             >
               <LazyLoadImage
-                src={github}
+                src={ppt}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
                 // effect="blur"

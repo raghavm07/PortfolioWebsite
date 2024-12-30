@@ -33,7 +33,10 @@ const ProjectCard = ({
         }}
         className="publish-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full "
       >
-        <div className="Box1 relative w-full h-[180px]">
+        <div
+          className="Box1 relative w-full h-[180px]"
+          onClick={() => window.open(source_link, "_blank")}
+        >
           <LazyLoadImage
             src={image}
             alt="project_image"

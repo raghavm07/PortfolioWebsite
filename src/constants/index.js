@@ -38,6 +38,7 @@ import {
   azure,
   nayaySetu,
   credible,
+  rethink1,
 } from "../assets";
 
 const profiles = [
